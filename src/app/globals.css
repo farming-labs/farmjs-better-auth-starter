@@ -42,6 +42,10 @@ body {
   color: var(--ink);
 }
 
+#root {
+  min-height: 100vh;
+}
+
 button,
 input {
   font: inherit;

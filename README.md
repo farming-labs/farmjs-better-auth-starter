@@ -78,6 +78,7 @@ pnpm dev         # start the development server
 pnpm type-check  # run TypeScript checks
 pnpm build       # create the production build
 pnpm check       # type-check and build
+pnpm run deploy -- --prod  # deploy the prebuilt Farm output to Vercel
 ```
 
 ## License

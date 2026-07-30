@@ -28,3 +28,4 @@ declare module "@farm.js/core/dist/client.js" {
     pattern: import("./farm-routes").RoutePattern;
   }
 }
+
