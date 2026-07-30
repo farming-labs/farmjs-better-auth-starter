@@ -1,6 +1,6 @@
 # Farm.js Better Auth Starter
 
-A standalone authentication starter built with Farm.js, Better Auth, React, and SQLite.
+A standalone authentication starter built with Farm.js, Better Auth, React, and Neon Postgres.
 
 Current starter baseline: Farm.js `0.1.0-beta.3` and Better Auth `1.6.25`.
 
@@ -9,7 +9,7 @@ Current starter baseline: Farm.js `0.1.0-beta.3` and Better Auth `1.6.25`.
 - email and password sign-up and sign-in
 - Better Auth session cookies
 - a server-middleware-protected `/dashboard`
-- local SQLite persistence and automatic Better Auth migrations
+- pooled Postgres persistence and automatic Better Auth migrations
 - pending, error, unauthorized, loading, and not-found states
 - responsive starter UI
 - exact Farm.js beta dependencies for reproducible installs
@@ -17,7 +17,7 @@ Current starter baseline: Farm.js `0.1.0-beta.3` and Better Auth `1.6.25`.
 ## Quick start
 
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/farmjs-better-auth-starter.git
+git clone https://github.com/farming-labs/farmjs-better-auth-starter.git
 cd farmjs-better-auth-starter
 cp .env.example .env.local
 ```
@@ -39,7 +39,8 @@ Open [http://localhost:3000](http://localhost:3000), create an account, and cont
 
 ## How it is wired
 
-- [`src/lib/auth.ts`](./src/lib/auth.ts) creates the Better Auth instance and runs local migrations.
+- [`src/lib/auth.ts`](./src/lib/auth.ts) creates the Better Auth instance, configures the pooled
+  Postgres connection, and runs programmatic migrations.
 - [`farm.config.ts`](./farm.config.ts) mounts that instance through `@farm.js/better-auth`.
 - [`src/lib/auth-client.ts`](./src/lib/auth-client.ts) exposes the browser client.
 - [`src/lib/session.ts`](./src/lib/session.ts) resolves the current request session on the server.
@@ -58,15 +59,17 @@ Farm owns the catch-all integration route, so the starter does not need a manual
 | --- | --- |
 | `BETTER_AUTH_URL` | Public origin used by Better Auth |
 | `BETTER_AUTH_SECRET` | Secret used to sign and encrypt auth data |
-| `BETTER_AUTH_DATABASE_PATH` | Local SQLite database location |
+| `DATABASE_URL` | Pooled Postgres connection string |
 
-Never commit `.env.local` or the SQLite database.
+Never commit `.env.local` or expose the database connection string.
 
 ## Deployment note
 
-SQLite is ideal for local development and a single persistent Node server. Most serverless platforms use ephemeral filesystems, so replace `better-sqlite3` with a persistent Better Auth database adapter before deploying there.
+The starter uses `pg` with a small connection pool suitable for a pooled Neon endpoint. Add
+`DATABASE_URL`, `BETTER_AUTH_SECRET`, and the production `BETTER_AUTH_URL` to your deployment
+environment before building.
 
-The Farm deployment target is configured in [`farm.config.ts`](./farm.config.ts). Update it for your hosting environment after choosing persistent storage.
+The Farm deployment target is configured in [`farm.config.ts`](./farm.config.ts) for Vercel.
 
 ## Commands
 

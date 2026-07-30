@@ -108,7 +108,7 @@ export default function DashboardPage() {
               </div>
               <div>
                 <dt>Storage</dt>
-                <dd>Local SQLite</dd>
+                <dd>Neon Postgres</dd>
               </div>
             </dl>
           </article>
@@ -122,7 +122,7 @@ export default function DashboardPage() {
           <div className="next-step-list">
             <div>
               <span>01</span>
-              <p>Replace the local SQLite adapter before deploying to stateless serverless hosting.</p>
+              <p>Set the production auth URL, secret, and pooled database URL in your host.</p>
             </div>
             <div>
               <span>02</span>

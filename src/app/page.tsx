@@ -20,7 +20,8 @@ export default async function HomePage() {
             <h1>Ship the account flow before the product gets complicated.</h1>
             <p className="hero-description">
               Email and password authentication, secure cookie sessions, a middleware-protected
-              dashboard, and local SQLite persistence—already wired together with Better Auth.
+              dashboard, and pooled Neon Postgres persistence—already wired together with Better
+              Auth.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href={session ? "/dashboard" : "/sign-up"}>
@@ -34,7 +35,7 @@ export default async function HomePage() {
             <div className="version-row" aria-label="Starter versions">
               <span>Farm.js v{FARM_VERSION}</span>
               <span>Better Auth v{packageJson.dependencies["better-auth"]}</span>
-              <span>SQLite</span>
+              <span>Neon Postgres</span>
             </div>
           </div>
 
@@ -55,7 +56,7 @@ export default async function HomePage() {
               </p>
               <div className="terminal-divider" />
               <p className="terminal-success">✓ auth routes mounted at /api/auth/*</p>
-              <p className="terminal-success">✓ local migrations applied</p>
+              <p className="terminal-success">✓ Postgres migrations applied</p>
               <p className="terminal-muted">http://localhost:3000</p>
             </div>
           </div>
@@ -81,9 +82,9 @@ export default async function HomePage() {
             </article>
             <article className="feature-cell">
               <span className="feature-number">03</span>
-              <h3>Local persistence</h3>
-              <p>SQLite keeps development self-contained while the auth module stays adapter-friendly.</p>
-              <code>.data/auth.sqlite</code>
+              <h3>Deployable persistence</h3>
+              <p>Neon’s pooled Postgres connection keeps auth data durable across deployments.</p>
+              <code>DATABASE_URL</code>
             </article>
           </div>
         </section>

@@ -14,14 +14,14 @@
     "@farm.js/better-auth": "0.1.0-beta.3",
     "@farm.js/core": "0.1.0-beta.3",
     "better-auth": "1.6.25",
-    "better-sqlite3": "12.11.1",
+    "pg": "8.22.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@farm.js/cli": "0.1.0-beta.3",
-    "@types/better-sqlite3": "7.6.13",
     "@types/node": "20.19.9",
+    "@types/pg": "8.20.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "tailwindcss": "^4.0.0",

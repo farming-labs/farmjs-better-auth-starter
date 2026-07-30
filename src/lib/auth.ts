@@ -1,13 +1,14 @@
-import { mkdirSync } from "node:fs";
-import path from "node:path";
-import Database from "better-sqlite3";
 import { betterAuth } from "better-auth";
 import { getMigrations } from "better-auth/db/migration";
+import { Pool, type PoolConfig } from "pg";
 
 const authBaseUrl = process.env.BETTER_AUTH_URL ?? "http://localhost:3000";
-const databasePath =
-  process.env.BETTER_AUTH_DATABASE_PATH ?? path.join(process.cwd(), ".data", "auth.sqlite");
+const databaseUrl = process.env.DATABASE_URL;
 const secret = process.env.BETTER_AUTH_SECRET;
+
+if (!databaseUrl) {
+  throw new Error("DATABASE_URL is required. Add your pooled Postgres connection string.");
+}
 
 if (!secret) {
   throw new Error(
@@ -15,12 +16,29 @@ if (!secret) {
   );
 }
 
-mkdirSync(path.dirname(databasePath), { recursive: true });
+const databaseConnection = new URL(databaseUrl);
+const enableChannelBinding =
+  databaseConnection.searchParams.get("channel_binding") === "require";
+
+if (databaseConnection.searchParams.get("sslmode") === "require") {
+  databaseConnection.searchParams.set("sslmode", "verify-full");
+}
+
+const poolConfig: PoolConfig & { enableChannelBinding: boolean } = {
+  connectionString: databaseConnection.toString(),
+  enableChannelBinding,
+  max: process.env.NODE_ENV === "production" ? 5 : 2,
+  idleTimeoutMillis: 30_000,
+  connectionTimeoutMillis: 10_000,
+  allowExitOnIdle: true,
+};
+
+const database = new Pool(poolConfig);
 
 export const auth = betterAuth({
   appName: "Farm.js Better Auth Starter",
   baseURL: authBaseUrl,
-  database: new Database(databasePath),
+  database,
   emailAndPassword: {
     enabled: true,
     minPasswordLength: 8,

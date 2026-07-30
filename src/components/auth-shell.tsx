@@ -23,7 +23,7 @@ export function AuthShell({ children }: AuthShellProps) {
           <h2>Authentication should feel like infrastructure, not a side project.</h2>
           <p>
             This starter keeps the setup inspectable: one Better Auth instance, one Farm integration,
-            and one local database you can replace when you deploy.
+            and one pooled Postgres database shared by local development and production.
           </p>
         </div>
 
@@ -32,7 +32,7 @@ export function AuthShell({ children }: AuthShellProps) {
             <span aria-hidden="true">✓</span> Secure cookie sessions
           </li>
           <li>
-            <span aria-hidden="true">✓</span> Automatic SQLite migrations
+            <span aria-hidden="true">✓</span> Automatic Postgres migrations
           </li>
           <li>
             <span aria-hidden="true">✓</span> Server-side route protection
