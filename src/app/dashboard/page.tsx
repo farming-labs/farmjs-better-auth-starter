@@ -1,20 +1,65 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { SignOutButton } from "../../components/sign-out-button";
 import { SiteHeader } from "../../components/site-header";
 import { authClient } from "../../lib/auth-client";
 
+type SessionState =
+  | { status: "loading" }
+  | { status: "unauthorized" }
+  | {
+      status: "ready";
+      session: {
+        user: {
+          createdAt: Date | string;
+          email: string;
+          name: string;
+        };
+        session: {
+          expiresAt: Date | string;
+          id: string;
+        };
+      };
+    };
+
 export default function DashboardPage() {
-  const { data: session, error, isPending } = authClient.useSession();
+  const [sessionState, setSessionState] = useState<SessionState>({ status: "loading" });
 
   useEffect(() => {
-    if (!isPending && !session?.user) {
-      window.location.replace("/sign-in");
-    }
-  }, [isPending, session]);
+    let cancelled = false;
 
-  if (isPending) {
+    authClient
+      .getSession()
+      .then((response) => {
+        if (cancelled) {
+          return;
+        }
+
+        if (response.error || !response.data?.user) {
+          setSessionState({ status: "unauthorized" });
+          window.location.replace("/sign-in");
+          return;
+        }
+
+        setSessionState({
+          status: "ready",
+          session: response.data,
+        });
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setSessionState({ status: "unauthorized" });
+          window.location.replace("/sign-in");
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  if (sessionState.status === "loading") {
     return (
       <main className="loading-shell" aria-label="Loading account" aria-live="polite">
         <div className="loading-block">
@@ -30,7 +75,7 @@ export default function DashboardPage() {
     );
   }
 
-  if (error || !session?.user) {
+  if (sessionState.status === "unauthorized") {
     return (
       <main className="loading-shell" aria-label="Returning to sign in" aria-live="polite">
         <div className="loading-block">
@@ -41,6 +86,7 @@ export default function DashboardPage() {
     );
   }
 
+  const { session } = sessionState;
   const createdAt = new Date(session.user.createdAt).toLocaleDateString("en", {
     day: "numeric",
     month: "short",
