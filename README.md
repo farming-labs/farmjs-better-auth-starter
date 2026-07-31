@@ -1,17 +1,19 @@
-# Farm.js Better Auth Starter
+# Farm.js Auth Starter
 
-A standalone authentication starter built with Farm.js, Better Auth, React, and Neon Postgres.
+A standalone email/password authentication starter using Farm.js built-in authentication and
+React.
 
-Current starter baseline: Farm.js `0.1.0-beta.3` and Better Auth `1.6.25`.
+Current starter baseline: Farm.js `0.1.0-beta.7` and Farm Auth `0.1.0-beta.7`.
 
 ## Included
 
-- email and password sign-up and sign-in
-- Better Auth session cookies
+- email/password sign-up and sign-in enabled by `auth: true`
+- database-backed, HTTP-only session cookies
 - a server-middleware-protected `/dashboard`
-- pooled Postgres persistence and automatic Better Auth migrations
+- `@farm.js/auth/server` request helpers and the `@farm.js/auth/client` React hook
+- automatic local SQLite storage in `.farm/auth.sqlite`
+- production Postgres support through `DATABASE_URL`
 - pending, error, unauthorized, loading, and not-found states
-- responsive starter UI
 - exact Farm.js beta dependencies for reproducible installs
 
 ## Quick start
@@ -19,66 +21,73 @@ Current starter baseline: Farm.js `0.1.0-beta.3` and Better Auth `1.6.25`.
 ```bash
 git clone https://github.com/farming-labs/farmjs-better-auth-starter.git
 cd farmjs-better-auth-starter
-cp .env.example .env.local
+pnpm install
+pnpm dev
 ```
 
-Generate a secret and place it in `BETTER_AUTH_SECRET`:
+Open [http://localhost:3000](http://localhost:3000), create an account, and continue to the
+protected dashboard. Local development needs no database or auth environment variables; Farm Auth
+creates and migrates `.farm/auth.sqlite` when auth is first used.
+
+## How it is wired
+
+- [`farm.config.ts`](./farm.config.ts) enables email/password authentication with `auth: true`.
+- [`src/app/page.tsx`](./src/app/page.tsx) reads the current session with
+  `auth.session()` from `@farm.js/auth/server`.
+- [`src/components/auth-form.tsx`](./src/components/auth-form.tsx) uses the built-in `signIn` and
+  `signUp` client functions.
+- [`src/app/dashboard/middleware.ts`](./src/app/dashboard/middleware.ts) redirects anonymous
+  requests before the dashboard route runs.
+- [`src/app/dashboard/page.tsx`](./src/app/dashboard/page.tsx) uses the built-in `useAuth` React
+  hook to render the current account and session.
+
+Farm owns the auth action routes, so the starter does not need an app-local Better Auth instance,
+client factory, database pool, or catch-all API route:
+
+```text
+/api/auth/*
+```
+
+## Production environment
+
+Local development uses safe defaults. Production requires these deployment environment variables:
+
+| Variable           | Purpose                                                     |
+| ------------------ | ----------------------------------------------------------- |
+| `FARM_AUTH_URL`    | Public application origin; inferred automatically on Vercel |
+| `FARM_AUTH_SECRET` | Random secret used to sign and encrypt auth data            |
+| `DATABASE_URL`     | Postgres connection string                                  |
+
+Generate a production secret with:
 
 ```bash
 openssl rand -base64 32
 ```
 
-Then install and start the app:
+Loading `farm.config.ts` and running `farm build` do not connect to the database. Apply the
+production auth schema before serving traffic:
 
 ```bash
-pnpm install
-pnpm dev
+pnpm auth:migrate
 ```
-
-Open [http://localhost:3000](http://localhost:3000), create an account, and continue to the protected dashboard.
-
-## How it is wired
-
-- [`src/lib/auth.ts`](./src/lib/auth.ts) creates the Better Auth instance, configures the pooled
-  Postgres connection, and runs programmatic migrations.
-- [`farm.config.ts`](./farm.config.ts) mounts that instance through `@farm.js/better-auth`.
-- [`src/lib/auth-client.ts`](./src/lib/auth-client.ts) exposes the browser client.
-- [`src/lib/session.ts`](./src/lib/session.ts) resolves the current request session on the server.
-- [`src/app/dashboard/middleware.ts`](./src/app/dashboard/middleware.ts) redirects unauthenticated requests before the dashboard route runs.
-- [`src/app/dashboard/page.tsx`](./src/app/dashboard/page.tsx) reads the already-authorized session and renders the account UI.
-
-Farm owns the catch-all integration route, so the starter does not need a manual API route:
-
-```text
-/api/auth/[...auth]
-```
-
-## Environment
-
-| Variable | Purpose |
-| --- | --- |
-| `BETTER_AUTH_URL` | Public origin used by Better Auth |
-| `BETTER_AUTH_SECRET` | Secret used to sign and encrypt auth data |
-| `DATABASE_URL` | Pooled Postgres connection string |
-
-Never commit `.env.local` or expose the database connection string.
-
-## Deployment note
-
-The starter uses `pg` with a small connection pool suitable for a pooled Neon endpoint. Add
-`DATABASE_URL`, `BETTER_AUTH_SECRET`, and the production `BETTER_AUTH_URL` to your deployment
-environment before building.
 
 The Farm deployment target is configured in [`farm.config.ts`](./farm.config.ts) for Vercel.
+
+## Advanced authentication
+
+`auth: true` intentionally owns the common email/password path. If an application needs Better Auth
+plugins, adapters, social providers, or callbacks, replace the top-level auth option with an
+app-owned `integrations.auth` configuration using `@farm.js/better-auth`.
 
 ## Commands
 
 ```bash
-pnpm dev         # start the development server
-pnpm type-check  # run TypeScript checks
-pnpm build       # create the production build
-pnpm check       # type-check and build
-pnpm run deploy -- --prod  # deploy the prebuilt Farm output to Vercel
+pnpm dev          # start the development server
+pnpm type-check   # run TypeScript checks
+pnpm build        # create the production build without connecting to the database
+pnpm check        # type-check and build
+pnpm auth:migrate # apply the production auth schema
+pnpm run deploy -- --prod
 ```
 
 ## License

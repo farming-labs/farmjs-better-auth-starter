@@ -3,8 +3,8 @@ import { AuthForm } from "../../components/auth-form";
 import { AuthShell } from "../../components/auth-shell";
 
 export const metadata: Metadata = {
-  title: "Sign in | Farm.js Better Auth Starter",
-  description: "Sign in with Better Auth.",
+  title: "Sign in | Farm.js Auth Starter",
+  description: "Sign in with Farm Auth.",
 };
 
 export default function SignInPage() {

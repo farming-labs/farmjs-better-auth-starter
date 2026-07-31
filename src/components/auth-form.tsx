@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { authClient } from "../lib/auth-client";
+import { signIn, signUp } from "@farm.js/auth/client";
 
 interface AuthFormProps {
   mode: "sign-in" | "sign-up";
@@ -24,12 +24,12 @@ export function AuthForm({ mode }: AuthFormProps) {
 
     try {
       const response = isSignUp
-        ? await authClient.signUp.email({
+        ? await signUp({
             email,
             name,
             password,
           })
-        : await authClient.signIn.email({
+        : await signIn({
             email,
             password,
           });

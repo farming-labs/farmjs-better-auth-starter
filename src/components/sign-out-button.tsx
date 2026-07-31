@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { authClient } from "../lib/auth-client";
+import { signOut as endSession } from "@farm.js/auth/client";
 
 export function SignOutButton() {
   const [pending, setPending] = useState(false);
@@ -12,7 +12,7 @@ export function SignOutButton() {
     setError(null);
 
     try {
-      const response = await authClient.signOut();
+      const response = await endSession();
       if (response.error) {
         setError(response.error.message ?? "Could not sign out.");
         setPending(false);
@@ -27,7 +27,12 @@ export function SignOutButton() {
 
   return (
     <div className="sign-out-control">
-      <button className="button button-secondary" disabled={pending} onClick={signOut} type="button">
+      <button
+        className="button button-secondary"
+        disabled={pending}
+        onClick={signOut}
+        type="button"
+      >
         {pending ? "Signing out…" : "Sign out"}
       </button>
       {error ? (

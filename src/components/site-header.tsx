@@ -10,13 +10,13 @@ interface SiteHeaderProps {
 export function SiteHeader({ user }: SiteHeaderProps) {
   return (
     <header className="site-header">
-      <a className="brand" href="/" aria-label="Farm.js Better Auth Starter home">
+      <a className="brand" href="/" aria-label="Farm.js Auth Starter home">
         <span className="brand-mark" aria-hidden="true">
           F
         </span>
         <span>
           <strong>Farm.js</strong>
-          <small>Better Auth Starter</small>
+          <small>Auth Starter</small>
         </span>
       </a>
 

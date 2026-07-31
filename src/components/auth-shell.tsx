@@ -14,7 +14,7 @@ export function AuthShell({ children }: AuthShellProps) {
           </span>
           <span>
             <strong>Farm.js</strong>
-            <small>Better Auth Starter</small>
+            <small>Auth Starter</small>
           </span>
         </a>
 
@@ -22,8 +22,8 @@ export function AuthShell({ children }: AuthShellProps) {
           <span className="section-index light">AUTH / EMAIL + PASSWORD</span>
           <h2>Authentication should feel like infrastructure, not a side project.</h2>
           <p>
-            This starter keeps the setup inspectable: one Better Auth instance, one Farm integration,
-            and one pooled Postgres database shared by local development and production.
+            This starter keeps the setup small: one Farm config switch, framework-owned helpers,
+            local SQLite, and production-ready Postgres support.
           </p>
         </div>
 
@@ -32,7 +32,7 @@ export function AuthShell({ children }: AuthShellProps) {
             <span aria-hidden="true">✓</span> Secure cookie sessions
           </li>
           <li>
-            <span aria-hidden="true">✓</span> Automatic Postgres migrations
+            <span aria-hidden="true">✓</span> Automatic local schema setup
           </li>
           <li>
             <span aria-hidden="true">✓</span> Server-side route protection

@@ -1,65 +1,20 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useAuth } from "@farm.js/auth/client";
+import { useEffect } from "react";
 import { SignOutButton } from "../../components/sign-out-button";
 import { SiteHeader } from "../../components/site-header";
-import { authClient } from "../../lib/auth-client";
-
-type SessionState =
-  | { status: "loading" }
-  | { status: "unauthorized" }
-  | {
-      status: "ready";
-      session: {
-        user: {
-          createdAt: Date | string;
-          email: string;
-          name: string;
-        };
-        session: {
-          expiresAt: Date | string;
-          id: string;
-        };
-      };
-    };
 
 export default function DashboardPage() {
-  const [sessionState, setSessionState] = useState<SessionState>({ status: "loading" });
+  const { isPending, session, user } = useAuth();
 
   useEffect(() => {
-    let cancelled = false;
+    if (!isPending && !user) {
+      window.location.replace("/sign-in");
+    }
+  }, [isPending, user]);
 
-    authClient
-      .getSession()
-      .then((response) => {
-        if (cancelled) {
-          return;
-        }
-
-        if (response.error || !response.data?.user) {
-          setSessionState({ status: "unauthorized" });
-          window.location.replace("/sign-in");
-          return;
-        }
-
-        setSessionState({
-          status: "ready",
-          session: response.data,
-        });
-      })
-      .catch(() => {
-        if (!cancelled) {
-          setSessionState({ status: "unauthorized" });
-          window.location.replace("/sign-in");
-        }
-      });
-
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  if (sessionState.status === "loading") {
+  if (isPending) {
     return (
       <main className="loading-shell" aria-label="Loading account" aria-live="polite">
         <div className="loading-block">
@@ -75,7 +30,7 @@ export default function DashboardPage() {
     );
   }
 
-  if (sessionState.status === "unauthorized") {
+  if (!user || !session) {
     return (
       <main className="loading-shell" aria-label="Returning to sign in" aria-live="polite">
         <div className="loading-block">
@@ -86,13 +41,12 @@ export default function DashboardPage() {
     );
   }
 
-  const { session } = sessionState;
-  const createdAt = new Date(session.user.createdAt).toLocaleDateString("en", {
+  const createdAt = new Date(user.createdAt).toLocaleDateString("en", {
     day: "numeric",
     month: "short",
     year: "numeric",
   });
-  const expiresAt = new Date(session.session.expiresAt).toLocaleString("en", {
+  const expiresAt = new Date(session.expiresAt).toLocaleString("en", {
     day: "numeric",
     hour: "2-digit",
     minute: "2-digit",
@@ -101,13 +55,13 @@ export default function DashboardPage() {
 
   return (
     <div className="site-frame">
-      <SiteHeader user={session.user} />
+      <SiteHeader user={user} />
 
       <main className="dashboard-shell">
         <div className="dashboard-heading">
           <div>
             <span className="section-index">PROTECTED / MIDDLEWARE VERIFIED</span>
-            <h1>Welcome back, {session.user.name}.</h1>
+            <h1>Welcome back, {user.name}.</h1>
             <p>Farm route middleware verified your session before this dashboard loaded.</p>
           </div>
           <SignOutButton />
@@ -125,11 +79,11 @@ export default function DashboardPage() {
             <dl className="detail-list">
               <div>
                 <dt>Name</dt>
-                <dd>{session.user.name}</dd>
+                <dd>{user.name}</dd>
               </div>
               <div>
                 <dt>Email</dt>
-                <dd>{session.user.email}</dd>
+                <dd>{user.email}</dd>
               </div>
               <div>
                 <dt>Created</dt>
@@ -146,7 +100,7 @@ export default function DashboardPage() {
             <dl className="detail-list">
               <div>
                 <dt>Session ID</dt>
-                <dd className="mono truncate">{session.session.id}</dd>
+                <dd className="mono truncate">{session.id}</dd>
               </div>
               <div>
                 <dt>Expires</dt>
@@ -154,7 +108,7 @@ export default function DashboardPage() {
               </div>
               <div>
                 <dt>Storage</dt>
-                <dd>Neon Postgres</dd>
+                <dd>SQLite locally / Postgres in production</dd>
               </div>
             </dl>
           </article>
@@ -168,13 +122,11 @@ export default function DashboardPage() {
           <div className="next-step-list">
             <div>
               <span>01</span>
-              <p>Set the production auth URL, secret, and pooled database URL in your host.</p>
+              <p>Set the production Farm Auth URL, secret, and database URL in your host.</p>
             </div>
             <div>
               <span>02</span>
-              <p>
-                Add GitHub or Google inside <code>src/lib/auth.ts</code> when you need OAuth.
-              </p>
+              <p>Run the Farm Auth migration command before serving production traffic.</p>
             </div>
             <div>
               <span>03</span>
