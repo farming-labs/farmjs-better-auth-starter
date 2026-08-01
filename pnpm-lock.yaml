@@ -9,8 +9,8 @@ dependencies:
     specifier: 0.1.0-beta.3
     version: 0.1.0-beta.3(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
   '@farm.js/core':
-    specifier: 0.1.0-beta.7
-    version: 0.1.0-beta.7(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+    specifier: 0.1.0-beta.9
+    version: 0.1.0-beta.9(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
   better-auth:
     specifier: 1.6.25
     version: 1.6.25(@prisma/client@6.19.3)(drizzle-orm@0.45.2)(mongodb@6.21.0)(pg@8.22.0)(react-dom@19.2.8)(react@19.2.8)(vue@3.5.40)
@@ -1615,8 +1615,8 @@ packages:
       - xml2js
       - yaml
 
-  /@farm.js/core@0.1.0-beta.7(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
-    resolution: {integrity: sha512-dKXdu4ZembchODUdVDX57nKKNT336rQHEwELJ/cZZVWqQSTI6ELUzLcEPY2nBcVbddXSh0nsvv9b9eOysxcK6Q==}
+  /@farm.js/core@0.1.0-beta.9(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
+    resolution: {integrity: sha512-cZ2nJlGKNL7oKXJtrpkSqIuK3Rw8YL4ESgmXP/we6Xv0evSn71XyLKtpmS+Wtljsxjf6IapyAnZ6Y5t1YNLY7Q==}
     peerDependencies:
       react: ^18.2.0 || ^19.0.0
       react-dom: ^18.2.0 || ^19.0.0
