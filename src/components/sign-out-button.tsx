@@ -27,7 +27,12 @@ export function SignOutButton() {
 
   return (
     <div className="sign-out-control">
-      <button className="button button-secondary" disabled={pending} onClick={signOut} type="button">
+      <button
+        className="button button-secondary"
+        disabled={pending}
+        onClick={signOut}
+        type="button"
+      >
         {pending ? "Signing out…" : "Sign out"}
       </button>
       {error ? (

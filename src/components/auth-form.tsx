@@ -50,19 +50,16 @@ export function AuthForm({ mode }: AuthFormProps) {
   return (
     <div className="auth-form-panel">
       <div className="auth-form-heading">
-        <span className="section-index">{isSignUp ? "NEW ACCOUNT" : "WELCOME BACK"}</span>
-        <h1>{isSignUp ? "Create your account" : "Sign in to continue"}</h1>
-        <p>
-          {isSignUp
-            ? "Start with email and password. Add social providers when your product needs them."
-            : "Use the credentials you created for this local starter."}
-        </p>
+        <span className="section-index">{isSignUp ? "01 / SIGN UP" : "01 / SIGN IN"}</span>
+        <h1>{isSignUp ? "Create account." : "Welcome back."}</h1>
       </div>
 
       <form className="auth-form" onSubmit={submit}>
         {isSignUp ? (
           <label className="field">
-            <span>Name</span>
+            <span>
+              <small>01</small> Name
+            </span>
             <input
               autoComplete="name"
               minLength={2}
@@ -75,7 +72,9 @@ export function AuthForm({ mode }: AuthFormProps) {
         ) : null}
 
         <label className="field">
-          <span>Email address</span>
+          <span>
+            <small>{isSignUp ? "02" : "01"}</small> Email
+          </span>
           <input
             autoComplete="email"
             name="email"
@@ -86,7 +85,9 @@ export function AuthForm({ mode }: AuthFormProps) {
         </label>
 
         <label className="field">
-          <span>Password</span>
+          <span>
+            <small>{isSignUp ? "03" : "02"}</small> Password
+          </span>
           <input
             autoComplete={isSignUp ? "new-password" : "current-password"}
             minLength={8}
@@ -111,10 +112,8 @@ export function AuthForm({ mode }: AuthFormProps) {
       </form>
 
       <p className="auth-switch">
-        {isSignUp ? "Already have an account?" : "New to the starter?"}{" "}
-        <a href={isSignUp ? "/sign-in" : "/sign-up"}>
-          {isSignUp ? "Sign in" : "Create an account"}
-        </a>
+        {isSignUp ? "Have an account?" : "Need an account?"}{" "}
+        <a href={isSignUp ? "/sign-in" : "/sign-up"}>{isSignUp ? "Sign in →" : "Sign up →"}</a>
       </p>
     </div>
   );
