@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@farm.js/better-auth':
-    specifier: 0.1.0-beta.25
-    version: 0.1.0-beta.25(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+    specifier: 0.1.0-beta.36
+    version: 0.1.0-beta.36(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
   '@farm.js/core':
-    specifier: 0.1.0-beta.35
-    version: 0.1.0-beta.35(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+    specifier: 0.1.0-beta.36
+    version: 0.1.0-beta.36(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
   '@fontsource-variable/geist':
     specifier: 5.3.0
     version: 5.3.0
@@ -35,8 +35,8 @@ dependencies:
 
 devDependencies:
   '@farm.js/cli':
-    specifier: 0.1.0-beta.25
-    version: 0.1.0-beta.25(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+    specifier: 0.1.0-beta.36
+    version: 0.1.0-beta.36(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
   '@types/node':
     specifier: 20.19.9
     version: 20.19.9
@@ -1370,11 +1370,11 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@farm.js/better-auth@0.1.0-beta.25(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
-    resolution: {integrity: sha512-Zt9D+750MfGPcf04ia9ZpvFyM6piBT2TsQGHV0qwlD631CXQiNxnKJ3Dh5kDMpXYl+WqseuCu2TTXiR4MOR3tg==}
+  /@farm.js/better-auth@0.1.0-beta.36(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
+    resolution: {integrity: sha512-mKMnLwXKL72z8fJ/mjnyCXtSOHSDZZmnWsFsDc8rdoXtbJPjX8NbmaYFanfaKAjhBWJWF2XGSI6QOtXxBPgXqA==}
     dependencies:
-      '@farm.js/core': 0.1.0-beta.25(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
-      '@farm.js/integration-utils': 0.1.0-beta.25(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+      '@farm.js/core': 0.1.0-beta.36(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+      '@farm.js/integration-utils': 0.1.0-beta.36(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -1444,11 +1444,11 @@ packages:
       - yaml
     dev: false
 
-  /@farm.js/cli@0.1.0-beta.25(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
-    resolution: {integrity: sha512-LZ1+P1M7f6ZiPOi2Vq8jNMldbdow/abQo69BO05REi4Pssv/RsugWY5i5/Cr+wPlFhwek33++xRVfRhKd9Ymsw==}
+  /@farm.js/cli@0.1.0-beta.36(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
+    resolution: {integrity: sha512-dStq06EuLN7On8nbFe6m7GHjVG/2c87QeBFX/lR7WPzYMJLWcJu4ZkyydNa2zEXXQhuIUraaDTXS/GaLT+cbaA==}
     hasBin: true
     dependencies:
-      '@farm.js/core': 0.1.0-beta.25(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+      '@farm.js/core': 0.1.0-beta.36(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
       '@farm.js/tunnel': 0.1.0
       commander: 11.1.0
       croner: 9.1.0
@@ -1522,115 +1522,8 @@ packages:
       - yaml
     dev: true
 
-  /@farm.js/core@0.1.0-beta.25(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
-    resolution: {integrity: sha512-UmQtvOPEuFHD/mBYTRb+xU3A54UyBreMfAzlLClNhe7469CHXpXssxONU6Cr6izLDsg3dP9AXnEgdh9MQTepTA==}
-    peerDependencies:
-      react: ^18.2.0 || ^19.0.0
-      react-dom: ^18.2.0 || ^19.0.0
-    dependencies:
-      '@farming-labs/docs': 0.2.81(react@19.2.8)(supports-color@10.2.2)
-      '@farming-labs/orm': 0.0.62
-      '@farming-labs/orm-runtime': 0.0.62(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@xata.io/client@0.30.1)(db0@0.3.4)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)
-      '@formatjs/icu-messageformat-parser': 3.5.15
-      '@mdx-js/mdx': 3.1.1(supports-color@10.2.2)
-      '@scalar/api-reference': 1.63.0(supports-color@10.2.2)(tailwindcss@4.1.18)(typescript@5.9.3)(zod@4.4.3)
-      '@scalar/openapi-parser': 0.22.3
-      '@tailwindcss/vite': 4.1.18(vite@5.4.21)
-      '@vercel/og': 0.11.1
-      '@vitejs/plugin-react': 4.7.0(supports-color@10.2.2)(vite@5.4.21)
-      better-call: 1.3.7(zod@4.4.3)
-      db0: 0.3.4(drizzle-orm@0.45.2)
-      esbuild: 0.28.1
-      fast-glob: 3.3.3
-      h3: 2.0.1-rc.5
-      image-size: 2.0.2
-      intl-messageformat: 11.2.12
-      marked: 12.0.2
-      nitro: 3.0.1-alpha.0(drizzle-orm@0.45.2)(mongodb@6.21.0)(rolldown@1.2.0)(vite@5.4.21)
-      pg: 8.22.0
-      picocolors: 1.1.1
-      react: 19.2.8
-      react-dom: 19.2.8(react@19.2.8)
-      remark-gfm: 4.0.1(supports-color@10.2.2)
-      sirv: 2.0.4
-      sugar-high: 0.9.5
-      supports-color: 10.2.2
-      tailwindcss: 4.1.18
-      unstorage: 2.0.0-alpha.7(db0@0.3.4)(mongodb@6.21.0)
-      vite: 5.4.21(@types/node@20.19.9)
-      zod: 4.4.3
-    optionalDependencies:
-      rolldown: 1.2.0
-      sharp: 0.34.5
-      vite-rolldown: /vite@8.1.5(@types/node@20.19.9)(esbuild@0.28.1)
-    transitivePeerDependencies:
-      - '@azure/app-configuration'
-      - '@azure/cosmos'
-      - '@azure/data-tables'
-      - '@azure/identity'
-      - '@azure/keyvault-secrets'
-      - '@azure/storage-blob'
-      - '@capacitor/preferences'
-      - '@deno/kv'
-      - '@electric-sql/pglite'
-      - '@libsql/client'
-      - '@mikro-orm/core'
-      - '@netlify/blobs'
-      - '@planetscale/database'
-      - '@prisma/client'
-      - '@types/node'
-      - '@upstash/redis'
-      - '@vercel/blob'
-      - '@vercel/functions'
-      - '@vercel/kv'
-      - '@vitejs/devtools'
-      - '@vue/composition-api'
-      - '@xata.io/client'
-      - async-validator
-      - aws4fetch
-      - axios
-      - bare-abort-controller
-      - better-sqlite3
-      - change-case
-      - chokidar
-      - crossws
-      - drauu
-      - drizzle-orm
-      - idb-keyval
-      - ioredis
-      - jiti
-      - jwt-decode
-      - kysely
-      - less
-      - lightningcss
-      - lru-cache
-      - mongodb
-      - mongoose
-      - mysql2
-      - nprogress
-      - ofetch
-      - pg-native
-      - qrcode
-      - react-native-b4a
-      - sass
-      - sass-embedded
-      - sequelize
-      - sortablejs
-      - sqlite3
-      - stylus
-      - sugarss
-      - surrealdb
-      - terser
-      - tsx
-      - typeorm
-      - typescript
-      - universal-cookie
-      - uploadthing
-      - xml2js
-      - yaml
-
-  /@farm.js/core@0.1.0-beta.35(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
-    resolution: {integrity: sha512-OHlAnZB6iey+etlVUXj3uqrYGwJwASR38gGZytEcS32XGwOgvni+ZQQy25N2sEZ1pOGl1hpriOdBQIp3bvF5Dw==}
+  /@farm.js/core@0.1.0-beta.36(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
+    resolution: {integrity: sha512-faVYT6dhQDeZ0QgOyueuHcdYupV3Ixnnc6Jb4XNVafRnPxShjkNGY52Vr1PHw6QG77tgGNJGWIkZ/XymJe5kew==}
     peerDependencies:
       react: ^18.2.0 || ^19.0.0
       react-dom: ^18.2.0 || ^19.0.0
@@ -1742,12 +1635,11 @@ packages:
       - uploadthing
       - xml2js
       - yaml
-    dev: false
 
-  /@farm.js/integration-utils@0.1.0-beta.25(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
-    resolution: {integrity: sha512-oI/5iQ/VcLEuIfgSq9vvDzUzmJjQot8mkLqKqepCm9Wsvz6+nCnChYW+cKLzZ2GA9gA4Mhj1aA9m+GE/dD/0jA==}
+  /@farm.js/integration-utils@0.1.0-beta.36(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
+    resolution: {integrity: sha512-vH/EkVF2kJnf1l+dbq2djmP7kNWxw/pHEvDhsz8dQ9DhC0rfLxmCYUu3Y6NGyON3mPawQhERKcciiw0c/dUYSA==}
     dependencies:
-      '@farm.js/core': 0.1.0-beta.25(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+      '@farm.js/core': 0.1.0-beta.36(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -2659,7 +2551,6 @@ packages:
   /@opentelemetry/api@1.9.1:
     resolution: {integrity: sha512-gLyJlPHPZYdAk1JENA9LeHejZe1Ti77/pTeFm/nMXmQH/HFZlcS/O2XJB+L8fkbrNSqhdtlvjBVjxwUYanNH5Q==}
     engines: {node: '>=8.0.0'}
-    dev: false
 
   /@opentelemetry/semantic-conventions@1.43.0:
     resolution: {integrity: sha512-eSYWTm620tTk45EKSedaUL8MFYI8hW164hIXsgIHyxu3VobUB3fFCu5t0hQby6OoWRPsG1KkKUG2M5UadiLiVg==}
