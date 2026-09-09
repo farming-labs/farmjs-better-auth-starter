@@ -12,7 +12,7 @@ Requires Node.js 22.12 or newer.
 - email and password sign-up and sign-in
 - Better Auth session cookies
 - a server-middleware-protected `/dashboard`
-- pooled Postgres persistence and automatic Better Auth migrations
+- pooled Postgres persistence and explicit Better Auth migrations
 - pending, error, unauthorized, loading, and not-found states
 - responsive starter UI
 - exact Farm.js beta dependencies for reproducible installs
@@ -35,6 +35,7 @@ Then install and start the app:
 
 ```bash
 pnpm install
+pnpm auth:migrate
 pnpm dev
 ```
 
@@ -42,8 +43,9 @@ Open [http://localhost:3000](http://localhost:3000), create an account, and cont
 
 ## How it is wired
 
-- [`src/lib/auth.ts`](./src/lib/auth.ts) creates the Better Auth instance, configures the pooled
-  Postgres connection, and runs programmatic migrations.
+- [`src/lib/auth.ts`](./src/lib/auth.ts) creates the Better Auth instance and configures the pooled
+  Postgres connection without touching the database during a build.
+- [`src/lib/migrate-auth.ts`](./src/lib/migrate-auth.ts) runs schema migrations only when requested.
 - [`farm.config.ts`](./farm.config.ts) mounts that instance through `@farm.js/better-auth`.
 - [`src/lib/auth-client.ts`](./src/lib/auth-client.ts) exposes the browser client.
 - [`src/lib/session.ts`](./src/lib/session.ts) resolves the current request session on the server.
@@ -72,12 +74,16 @@ The starter uses `pg` with a small connection pool suitable for a pooled Neon en
 `DATABASE_URL`, `BETTER_AUTH_SECRET`, and the production `BETTER_AUTH_URL` to your deployment
 environment before building.
 
+Run `pnpm auth:migrate` (or `farm migrate`) as an explicit deployment step before serving traffic.
+The production build itself never runs database migrations.
+
 The Farm deployment target is configured in [`farm.config.ts`](./farm.config.ts) for Vercel.
 
 ## Commands
 
 ```bash
 pnpm dev         # start the development server
+pnpm auth:migrate # apply Better Auth database migrations
 pnpm type-check  # run TypeScript checks
 pnpm build       # create the production build
 pnpm check       # type-check and build

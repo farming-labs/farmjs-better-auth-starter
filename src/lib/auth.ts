@@ -1,5 +1,4 @@
 import { betterAuth } from "better-auth";
-import { getMigrations } from "better-auth/db/migration";
 import { Pool, type PoolConfig } from "pg";
 
 const authBaseUrl = process.env.BETTER_AUTH_URL ?? "http://localhost:3000";
@@ -33,12 +32,12 @@ const poolConfig: PoolConfig & { enableChannelBinding: boolean } = {
   allowExitOnIdle: true,
 };
 
-const database = new Pool(poolConfig);
+export const authDatabase = new Pool(poolConfig);
 
 export const auth = betterAuth({
   appName: "Farm.js Better Auth Starter",
   baseURL: authBaseUrl,
-  database,
+  database: authDatabase,
   emailAndPassword: {
     enabled: true,
     minPasswordLength: 8,
@@ -46,6 +45,3 @@ export const auth = betterAuth({
   secret,
   trustedOrigins: [new URL(authBaseUrl).origin],
 });
-
-const migrations = await getMigrations(auth.options);
-await migrations.runMigrations();
