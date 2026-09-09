@@ -2,10 +2,10 @@
 
 A standalone authentication starter built with Farm.js, Better Auth, React, and Neon Postgres.
 
-Current starter baseline: Farm.js `0.1.0-beta.83`, the Farm Better Auth integration
-`0.1.0-beta.83`, and Better Auth `1.6.25`.
+Current starter baseline: Farm.js `0.1.0-beta.88`, the Farm Better Auth integration
+`0.1.0-beta.88`, and Better Auth `1.6.25`.
 
-Requires Node.js 22.12 or newer.
+Requires Node.js 22.13 or newer.
 
 ## Included
 
