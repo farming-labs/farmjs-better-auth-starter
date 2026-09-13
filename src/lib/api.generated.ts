@@ -12,5 +12,5 @@ export type APIRouter = {
 
 };
 
-// Pass this schema-free manifest to createAPIClient({ routes: apiRoutes }).
+// Pass this schema-free manifest to createApiClients({ routes: apiRoutes }).
 export const apiRoutes = [] as const;
