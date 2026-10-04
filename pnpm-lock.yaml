@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@farm.js/better-auth':
-    specifier: 0.1.0
-    version: 0.1.0(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+    specifier: 0.1.1-beta.4
+    version: 0.1.1-beta.4(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
   '@farm.js/core':
-    specifier: 0.1.0
-    version: 0.1.0(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+    specifier: 0.1.1-beta.4
+    version: 0.1.1-beta.4(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
   '@fontsource-variable/geist':
     specifier: 5.3.0
     version: 5.3.0
@@ -35,8 +35,8 @@ dependencies:
 
 devDependencies:
   '@farm.js/cli':
-    specifier: 0.1.0
-    version: 0.1.0(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+    specifier: 0.1.1-beta.4
+    version: 0.1.1-beta.4(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
   '@types/node':
     specifier: 20.19.9
     version: 20.19.9
@@ -1131,11 +1131,11 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@farm.js/better-auth@0.1.0(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
-    resolution: {integrity: sha512-OTaggI2fczVNvPXaHlW3e3x9a4ufn6ZdfnVpOvRJOLOKJDlRG9+r3LcRjOBAx36s0MGpXGBaekn1X4trH84RmQ==}
+  /@farm.js/better-auth@0.1.1-beta.4(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
+    resolution: {integrity: sha512-taCEjZzoHX5R/DTny+zq3Fdn3Iqoa/CP5UE12Zbehv+9TR6r+LKJhjDRhBlUzFciUc2spy60GbZC/UKr4rwNSQ==}
     dependencies:
-      '@farm.js/core': 0.1.0(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
-      '@farm.js/integration-utils': 0.1.0(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+      '@farm.js/core': 0.1.1-beta.4(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+      '@farm.js/integration-utils': 0.1.1-beta.4(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -1202,13 +1202,13 @@ packages:
       - yaml
     dev: false
 
-  /@farm.js/cli@0.1.0(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
-    resolution: {integrity: sha512-ApLCHCZwBbxr78eL95dUWOICvoCLbzdxEciofzKtqTxgqG+lvMa0kTA2Lv1Cbrx0ySLuBMsfzr817n9n8PMGcQ==}
+  /@farm.js/cli@0.1.1-beta.4(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
+    resolution: {integrity: sha512-exSv8fmj3omp6VKKiyVh+OjwagZzr8razpic6mI2q5U2TfuE30jocmoWTH+bIs37/waj3kxucIhQ13JtDDJSdA==}
     engines: {node: '>=22.13.0'}
     hasBin: true
     dependencies:
-      '@farm.js/core': 0.1.0(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
-      '@farm.js/tunnel': 0.1.1
+      '@farm.js/core': 0.1.1-beta.4(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+      '@farm.js/tunnel': 0.1.2
       commander: 11.1.0
       croner: 9.1.0
       picocolors: 1.1.1
@@ -1278,8 +1278,8 @@ packages:
       - yaml
     dev: true
 
-  /@farm.js/core@0.1.0(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
-    resolution: {integrity: sha512-p+0AECqnVDZ5Be2lvdsdWWOIvWzJHe2/Fq99OxnOsztnjoWNdTpwn9/VDWmRYp3ID74oFnkOsgYTzVQMZnsRCw==}
+  /@farm.js/core@0.1.1-beta.4(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
+    resolution: {integrity: sha512-sad47FVrDWK3V7FqLhnXAeFSlC+7+WAgwTEB0dSkhxQl9qq+lkw+Y6YnGco9Fr5aLzZFwB8hKNEnWvITQq54og==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       react: ^18.2.0 || ^19.0.0
@@ -1290,7 +1290,7 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      '@farming-labs/docs': 0.2.117(react@19.2.8)(supports-color@10.2.2)
+      '@farming-labs/docs': 0.2.118(react@19.2.8)(supports-color@10.2.2)
       '@farming-labs/orm': 0.0.62
       '@farming-labs/orm-runtime': 0.0.62(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@xata.io/client@0.30.1)(db0@0.3.4)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)
       '@formatjs/icu-messageformat-parser': 3.5.15
@@ -1391,10 +1391,10 @@ packages:
       - uploadthing
       - yaml
 
-  /@farm.js/integration-utils@0.1.0(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
-    resolution: {integrity: sha512-9NETwzJYNpifg4DCLWxRSqEwha86ja7LiN6JDMDJp4iw8m60JwAt0OH63FDAAShQuk4dr0LqYTGXYs+2XS8uDQ==}
+  /@farm.js/integration-utils@0.1.1-beta.4(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3):
+    resolution: {integrity: sha512-ljhXPlBNgmLA6UXhwF3ouMFIzNMfeayOsQAlybK0+Krb1/R8Sa7iiaavv1tsSRsSaCEKzLojNZ0zVj2qLcjzkw==}
     dependencies:
-      '@farm.js/core': 0.1.0(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
+      '@farm.js/core': 0.1.1-beta.4(@mikro-orm/core@7.1.8)(@prisma/client@6.19.3)(@types/node@20.19.9)(@xata.io/client@0.30.1)(drizzle-orm@0.45.2)(kysely@0.28.17)(mongodb@6.21.0)(mongoose@8.24.2)(react-dom@19.2.8)(react@19.2.8)(sequelize@6.37.8)(surrealdb@2.0.8)(typeorm@0.3.31)(typescript@5.9.3)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -1461,8 +1461,8 @@ packages:
       - yaml
     dev: false
 
-  /@farm.js/tunnel-darwin-arm64@0.1.1:
-    resolution: {integrity: sha512-QFZGrH22vJbHa7DbwH61kraQzIFhmi8ipd4fIP9s5cHWQB+2W0uEodZoBVbrSLhxGwxcYHqG46VJwlCIQCjnvA==}
+  /@farm.js/tunnel-darwin-arm64@0.1.2:
+    resolution: {integrity: sha512-IX/DKuPjZznobkS2+QlLkIkh1b1glotch1XZgR40b2AOUPVsmZCmIqveYfExe1eRxbHmmdKj3ZpeOGbjMIBjIg==}
     engines: {node: '>=20.0.0'}
     cpu: [arm64]
     os: [darwin]
@@ -1470,8 +1470,8 @@ packages:
     dev: true
     optional: true
 
-  /@farm.js/tunnel-darwin-x64@0.1.1:
-    resolution: {integrity: sha512-05IMDpkq81JGPHQLyFNPvZnxJ0WNYON7PYBlivAP9uyOg+0PVXuIA/H5hs0P7QQiDrP9cGExvUH7+IN/wX0sZQ==}
+  /@farm.js/tunnel-darwin-x64@0.1.2:
+    resolution: {integrity: sha512-5Ash9dxMH9SSui8y87a592iU81aIfmezKRtDwI9HF7Ij4OUwKTGek7PzQlyg9LBevXFYcO21HaFBLl30oIhyVw==}
     engines: {node: '>=20.0.0'}
     cpu: [x64]
     os: [darwin]
@@ -1479,8 +1479,8 @@ packages:
     dev: true
     optional: true
 
-  /@farm.js/tunnel-linux-arm64-gnu@0.1.1:
-    resolution: {integrity: sha512-NnnUV4xH5mnlfliq3dDW+7FnwNvaDnuipCB05teSH5AHpwN9llntmoO9B84TER4BwRlZ5YO02Pcoij2svQDOpQ==}
+  /@farm.js/tunnel-linux-arm64-gnu@0.1.2:
+    resolution: {integrity: sha512-9nPL2VcJSTi0PUUyqx/tUt86FyHFN1+O029JJkhUG13FhTki8tYFpD/t6P78B3NVQETg4CHcKIB1kgZ8PUE7+w==}
     engines: {node: '>=20.0.0'}
     cpu: [arm64]
     os: [linux]
@@ -1488,8 +1488,8 @@ packages:
     dev: true
     optional: true
 
-  /@farm.js/tunnel-linux-arm64-musl@0.1.1:
-    resolution: {integrity: sha512-WjdP+ke9zwjqgwxgfsdNvzXW6ucVNDjqZCBV+wEDv21rQbxeZ/crFd0hDFij58a5ZttEyE3vJeACvh1knUW6uw==}
+  /@farm.js/tunnel-linux-arm64-musl@0.1.2:
+    resolution: {integrity: sha512-ackvEXCWUCbfPhVK6AOrI22U0k7rasMbg32xgM7tVtWZ0P3Qg69OP1xVl9DBisXiQbbHZli3WrDHzwff6W089Q==}
     engines: {node: '>=20.0.0'}
     cpu: [arm64]
     os: [linux]
@@ -1497,8 +1497,8 @@ packages:
     dev: true
     optional: true
 
-  /@farm.js/tunnel-linux-x64-gnu@0.1.1:
-    resolution: {integrity: sha512-jPzR4YBztdu5s509yLtshWlX3Es4oHPdrNn2XV3MpivWvIAD51U3Z7H3/PJyB7ZJiY3jfzo9ixTQr0Jfofb8uA==}
+  /@farm.js/tunnel-linux-x64-gnu@0.1.2:
+    resolution: {integrity: sha512-8bZU6gqvPlOximP9Raub9IdR/F7HUgPmC8hwPS84Y/lm43eHvfhjOg04wfPc/sBHG6fBwI/dUDLqwCL8EXcqDg==}
     engines: {node: '>=20.0.0'}
     cpu: [x64]
     os: [linux]
@@ -1506,8 +1506,8 @@ packages:
     dev: true
     optional: true
 
-  /@farm.js/tunnel-linux-x64-musl@0.1.1:
-    resolution: {integrity: sha512-HCbzkQ0pADtHzkLPHEOTIlMnex1w8M1aq6K/IKgb4hhGokiZW0d4sdlAvS5FAso1NC7tl+877j0eNzjhGZJR6w==}
+  /@farm.js/tunnel-linux-x64-musl@0.1.2:
+    resolution: {integrity: sha512-Cs+3MP+1+FMJvFYaqULU7DQ6lLmN7YGrq/UGBgG2OuRb+dA7EV1z60lwG1ocT318MlBluHh+mbNKT0MJLHLbpg==}
     engines: {node: '>=20.0.0'}
     cpu: [x64]
     os: [linux]
@@ -1515,8 +1515,8 @@ packages:
     dev: true
     optional: true
 
-  /@farm.js/tunnel-win32-arm64-msvc@0.1.1:
-    resolution: {integrity: sha512-JwGGq622xPUpizBb35PRMAMifACuAVre95Cnp9IjdhqE9aIOKLdKWLjAq+bb9+qa1JgE8999FoPOcQIria0Xtw==}
+  /@farm.js/tunnel-win32-arm64-msvc@0.1.2:
+    resolution: {integrity: sha512-Ezwuxsu8hrKxPQ6JdfBIyzjxks2TzodesGku+5gyEoSYgETTw2Fq0sTSJBOt2mbfU8J12rDHIKtrFWmxJQGx8g==}
     engines: {node: '>=20.0.0'}
     cpu: [arm64]
     os: [win32]
@@ -1524,8 +1524,8 @@ packages:
     dev: true
     optional: true
 
-  /@farm.js/tunnel-win32-x64-msvc@0.1.1:
-    resolution: {integrity: sha512-wle5M4MB3Zv+nYg75i93O2o4IRVBDvYjdV+Vk6KVXZr6bTrb2ELW2CiLGB4gjhlWdOA4whN3s63rXthZXBrM2g==}
+  /@farm.js/tunnel-win32-x64-msvc@0.1.2:
+    resolution: {integrity: sha512-zmxwZWpwylBwYaAt7cZzx8p4S4fS10GSRnc/L4jj8Jo9a6PpgHH9RTvimcK7U84A9oWaOGsUKBthz7mT+OGnDg==}
     engines: {node: '>=20.0.0'}
     cpu: [x64]
     os: [win32]
@@ -1533,22 +1533,22 @@ packages:
     dev: true
     optional: true
 
-  /@farm.js/tunnel@0.1.1:
-    resolution: {integrity: sha512-kaGeTp1iJx85Me+NAW70k1u361/bba1Veosx2zV9TN1soxFCUGnb+YlZXyA+soswFKAhw0eul+Et9+DX0A3LvA==}
+  /@farm.js/tunnel@0.1.2:
+    resolution: {integrity: sha512-9Rmep2U0eCCWx6zwLb1VAfjbYfsbGtXBsMZusSvYkbCV+3eEcz6+GhfOi7A8gfp7JiAdkiOpmGhmaJnc8wEb1A==}
     engines: {node: '>=20.0.0'}
     optionalDependencies:
-      '@farm.js/tunnel-darwin-arm64': 0.1.1
-      '@farm.js/tunnel-darwin-x64': 0.1.1
-      '@farm.js/tunnel-linux-arm64-gnu': 0.1.1
-      '@farm.js/tunnel-linux-arm64-musl': 0.1.1
-      '@farm.js/tunnel-linux-x64-gnu': 0.1.1
-      '@farm.js/tunnel-linux-x64-musl': 0.1.1
-      '@farm.js/tunnel-win32-arm64-msvc': 0.1.1
-      '@farm.js/tunnel-win32-x64-msvc': 0.1.1
+      '@farm.js/tunnel-darwin-arm64': 0.1.2
+      '@farm.js/tunnel-darwin-x64': 0.1.2
+      '@farm.js/tunnel-linux-arm64-gnu': 0.1.2
+      '@farm.js/tunnel-linux-arm64-musl': 0.1.2
+      '@farm.js/tunnel-linux-x64-gnu': 0.1.2
+      '@farm.js/tunnel-linux-x64-musl': 0.1.2
+      '@farm.js/tunnel-win32-arm64-msvc': 0.1.2
+      '@farm.js/tunnel-win32-x64-msvc': 0.1.2
     dev: true
 
-  /@farming-labs/docs@0.2.117(react@19.2.8)(supports-color@10.2.2):
-    resolution: {integrity: sha512-omwHLr5xyBXuUg9rr+XWCEs1vxcgqjSEoTUfhBdjys+zI9tThPuMOHpBC6DvRHrtqVczXry5W3qV6Zwlny1Jeg==}
+  /@farming-labs/docs@0.2.118(react@19.2.8)(supports-color@10.2.2):
+    resolution: {integrity: sha512-+WaV0WmflVEijB35aXBYRZkBdxVyDDH9BjcXy09D2uAy7n6WJelxFs6AWoXxRugpwNGx6Ke7uS7u2DgLkY/RNg==}
     engines: {node: '>=20'}
     hasBin: true
     peerDependencies:
