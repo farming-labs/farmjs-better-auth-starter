@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@farm.js/better-auth':
-    specifier: 0.1.17
-    version: 0.1.17(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
+    specifier: 0.1.19
+    version: 0.1.19(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
   '@farm.js/core':
-    specifier: 0.1.17
-    version: 0.1.17(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
+    specifier: 0.1.19
+    version: 0.1.19(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
   '@fontsource-variable/geist':
     specifier: 5.3.0
     version: 5.3.0
@@ -35,8 +35,8 @@ dependencies:
 
 devDependencies:
   '@farm.js/cli':
-    specifier: 0.1.17
-    version: 0.1.17(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
+    specifier: 0.1.19
+    version: 0.1.19(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
   '@types/node':
     specifier: 20.19.9
     version: 20.19.9
@@ -644,11 +644,11 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@farm.js/better-auth@0.1.17(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1):
-    resolution: {integrity: sha512-mjDejxsFVDWi/MviAisqHF7V5yIHYW0PaKNTMi1ko4A15BNOaCgpKZIXLJZ+HTEPHrSkXgHXDMaDJcAlOVYlIA==}
+  /@farm.js/better-auth@0.1.19(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1):
+    resolution: {integrity: sha512-hwlROuOyzofDp0tikSNK3rIAiC61JU8rG4cuahEjfzyLspw1ZFPr06uJfZmWSrMZIHb1sgM0WltpF5wXcfD0bg==}
     dependencies:
-      '@farm.js/core': 0.1.17(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
-      '@farm.js/integration-utils': 0.1.17(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
+      '@farm.js/core': 0.1.19(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
+      '@farm.js/integration-utils': 0.1.19(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
     transitivePeerDependencies:
       - '@aws-sdk/client-dynamodb'
       - '@azure/app-configuration'
@@ -704,12 +704,12 @@ packages:
       - yaml
     dev: false
 
-  /@farm.js/cli@0.1.17(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1):
-    resolution: {integrity: sha512-6mMPiUa8HW4nR4HeaYFaFiIyGzLEP6WK/d9lLXGR2WHy7wE5BfNJMyZMUo7FGyC2PuJCa6jPigoyqt8RK9Hx6w==}
+  /@farm.js/cli@0.1.19(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1):
+    resolution: {integrity: sha512-A5H80yO57TKcVPQFOPeu/GIv8hJCxKsEFVIDff7sQfh7pwcNBbW5coRF48Zw/xoZm9T9bmhPodjSVtug1tVBZg==}
     engines: {node: '>=22.13.0'}
     hasBin: true
     dependencies:
-      '@farm.js/core': 0.1.17(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
+      '@farm.js/core': 0.1.19(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
       '@farm.js/tunnel': 0.1.2
       commander: 11.1.0
       croner: 9.1.0
@@ -769,8 +769,8 @@ packages:
       - yaml
     dev: true
 
-  /@farm.js/core@0.1.17(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1):
-    resolution: {integrity: sha512-QGH+rozmwj8M/cNaYVvVbBxgorCGxNQQxDF85/r6z4d+G7FqELDOpyYdaACbkyvydMpbM3rOjx9uRdhpoSboTg==}
+  /@farm.js/core@0.1.19(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1):
+    resolution: {integrity: sha512-tRQpOa3NTq1DJYE/MVkX4R41TN3sBQ37Kx4Ll7URaiz2B0/1QhqautIll0YAI6KWPSejc6Tc6QCzmDPhRjRk0w==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       react: ^18.2.0 || ^19.0.0
@@ -866,10 +866,10 @@ packages:
       - uploadthing
       - yaml
 
-  /@farm.js/integration-utils@0.1.17(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1):
-    resolution: {integrity: sha512-jXYrIYyHsTj5DUDknLTxvh1effAGFCfb1T0X1w0wNW+S3xHSQziUs+Twh9YYzRp7S0Jl1xcO/fgsL3RdgCPfLA==}
+  /@farm.js/integration-utils@0.1.19(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1):
+    resolution: {integrity: sha512-UEfrHpwdN+Cg0nvVQWh4oToppupzzT/mXWscGuRa48nC6I1uiUm29xMzmP6ZHa+MxNg0UZfuV1+5gMhVG8fYGg==}
     dependencies:
-      '@farm.js/core': 0.1.17(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
+      '@farm.js/core': 0.1.19(@aws-sdk/client-dynamodb@3.1152.0)(@types/node@20.19.9)(kysely@0.29.6)(react-dom@19.3.1)(react@19.3.1)
     transitivePeerDependencies:
       - '@aws-sdk/client-dynamodb'
       - '@azure/app-configuration'
@@ -2243,7 +2243,7 @@ packages:
       '@better-auth/utils': 0.4.3
       '@better-fetch/fetch': 1.3.2
       rou3: 0.7.12
-      set-cookie-parser: 3.1.3
+      set-cookie-parser: 3.1.4
       zod: 4.6.7
 
   /bowser@2.14.1:
@@ -3925,8 +3925,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /set-cookie-parser@3.1.3:
-    resolution: {integrity: sha512-xletSdAI5efyVJjsatBbzDkXl3M/Zmad3xfnQe7ZXuBB0yNwW7C2WFsNGjdRNfZunmNHQuX79xs/ACMTLCdcew==}
+  /set-cookie-parser@3.1.4:
+    resolution: {integrity: sha512-iEmdEew+Tn1BwMGMP8LzGBEPC7Mf1sySjglCeEPb/Vchm9bnGezePvacYcId+fGprQzIng+TBkzqfJ/qS7AsBg==}
 
   /sharp@0.35.5(@types/node@20.19.9):
     resolution: {integrity: sha512-Ywn4OnzGukp7CDMrp08RQ50YKmuwG47brZgIVPTvBaaAfQlRlygrRqSrxdCiL9M+LlzLBiJ68IR1QqvzHyjC7g==}
