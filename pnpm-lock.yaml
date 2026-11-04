@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@farm.js/better-auth':
-    specifier: 0.1.44
-    version: 0.1.44(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+    specifier: 0.1.50
+    version: 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
   '@farm.js/core':
-    specifier: 0.1.44
-    version: 0.1.44(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+    specifier: 0.1.50
+    version: 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
   '@fontsource-variable/geist':
     specifier: 5.3.0
     version: 5.3.0
@@ -38,8 +38,8 @@ dependencies:
 
 devDependencies:
   '@farm.js/cli':
-    specifier: 0.1.44
-    version: 0.1.44(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+    specifier: 0.1.50
+    version: 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
   '@tailwindcss/vite':
     specifier: ^4.3.3
     version: 4.3.3(vite@8.3.4)
@@ -195,11 +195,11 @@ packages:
       tslib: 2.8.1
     optional: true
 
-  /@farm.js/better-auth@0.1.44(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
-    resolution: {integrity: sha512-o/L/eGSRYnTenLV6v3lu8uw2XJ7gKdsFVDwQFfmrsPrzpUaSOOInvx/RUHfSZ9ibHrNC/ri/FThv+On3Z+UHjA==}
+  /@farm.js/better-auth@0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
+    resolution: {integrity: sha512-1SYCZ8v+r+bBjsnz0pKEc3QzmlqyPR63aWiOFrhlI9Fc3Cc9n/pHlU/lPlTDFBScxw3F1LLOXrXVu9PKYLbvzg==}
     dependencies:
-      '@farm.js/core': 0.1.44(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
-      '@farm.js/integration-utils': 0.1.44(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+      '@farm.js/core': 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+      '@farm.js/integration-utils': 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
     transitivePeerDependencies:
       - '@aws-sdk/client-dynamodb'
       - '@aws-sdk/lib-dynamodb'
@@ -220,6 +220,8 @@ packages:
       - '@prisma/client'
       - '@rolldown/plugin-babel'
       - '@tailwindcss/vite'
+      - '@tanstack/react-router'
+      - '@tanstack/react-start'
       - '@types/node'
       - '@upstash/redis'
       - '@vercel/blob'
@@ -262,12 +264,12 @@ packages:
       - yaml
     dev: false
 
-  /@farm.js/cli@0.1.44(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
-    resolution: {integrity: sha512-+g7NaCWu/7bpDL6UQayV1fRj9YJ1MH4LXk0WU/vWcn8+6Qab3r71v80Y9kFy2sv0GZVDlN03OMKNiF3A0QxWmQ==}
+  /@farm.js/cli@0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
+    resolution: {integrity: sha512-Kyt7UAGx53uCJ0XTUoS3KyT2BdGVuKsONQoxWeEKh3FeyszbB5Jp9B7ymBuYrfwFirCNBPmngiIgy7T32O2rXg==}
     engines: {node: '>=22.13.0'}
     hasBin: true
     dependencies:
-      '@farm.js/core': 0.1.44(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+      '@farm.js/core': 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
       '@farm.js/tunnel': 0.1.2
       commander: 11.1.0
       croner: 9.1.0
@@ -292,6 +294,8 @@ packages:
       - '@prisma/client'
       - '@rolldown/plugin-babel'
       - '@tailwindcss/vite'
+      - '@tanstack/react-router'
+      - '@tanstack/react-start'
       - '@types/node'
       - '@upstash/redis'
       - '@vercel/blob'
@@ -334,8 +338,8 @@ packages:
       - yaml
     dev: true
 
-  /@farm.js/core@0.1.44(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
-    resolution: {integrity: sha512-0zOxMJOQQb1DWrFyuwHdJUA2NybqEAqaGMa6eVJSb2XQ2AGbNpSjXQk76Somr4Cb9GA6pB9cX7Uqozd1X41gJA==}
+  /@farm.js/core@0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
+    resolution: {integrity: sha512-hygenx17Sai+DFCX7UVDwr3y1HSIOGxyio46hz4KqFS1Q+XU3DuS/Ps7VEiGAiXpZ58jp7x1vk+wz+VNpqTT0g==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@farming-labs/docs': ^0.2.118
@@ -358,7 +362,7 @@ packages:
       sharp:
         optional: true
     dependencies:
-      '@farm.js/islx': 0.0.1(react-dom@19.3.1)(react@19.3.1)(vite@8.3.4)
+      '@farm.js/islx': 0.0.5(react-dom@19.3.1)(react@19.3.1)(vite@8.3.4)
       '@farming-labs/orm': 0.0.65
       '@farming-labs/orm-runtime': 0.0.65(db0@0.3.4)(kysely@0.29.7)
       '@formatjs/icu-messageformat-parser': 3.5.15
@@ -406,6 +410,8 @@ packages:
       - '@planetscale/database'
       - '@prisma/client'
       - '@rolldown/plugin-babel'
+      - '@tanstack/react-router'
+      - '@tanstack/react-start'
       - '@types/node'
       - '@upstash/redis'
       - '@vercel/blob'
@@ -443,10 +449,10 @@ packages:
       - uploadthing
       - yaml
 
-  /@farm.js/integration-utils@0.1.44(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
-    resolution: {integrity: sha512-0VlK4f3tSwbKRPdXpUDduOsnqbzZDw0lk+opzBU1MQL/qQdzRDr6a5WrA2Ep635bGEyvVDH4WfMqSu88HHXXZw==}
+  /@farm.js/integration-utils@0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
+    resolution: {integrity: sha512-hYeI1U1jSH6LQdDwJ6VRcWz5zaSCeHkLSDuPZDsSTbcrtpT6aC4g4gawCetwF5CSyKTlkd9bBut122qSNKQnlA==}
     dependencies:
-      '@farm.js/core': 0.1.44(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+      '@farm.js/core': 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
     transitivePeerDependencies:
       - '@aws-sdk/client-dynamodb'
       - '@aws-sdk/lib-dynamodb'
@@ -467,6 +473,8 @@ packages:
       - '@prisma/client'
       - '@rolldown/plugin-babel'
       - '@tailwindcss/vite'
+      - '@tanstack/react-router'
+      - '@tanstack/react-start'
       - '@types/node'
       - '@upstash/redis'
       - '@vercel/blob'
@@ -509,14 +517,20 @@ packages:
       - yaml
     dev: false
 
-  /@farm.js/islx@0.0.1(react-dom@19.3.1)(react@19.3.1)(vite@8.3.4):
-    resolution: {integrity: sha512-kK1mOpVRxjA7f9mu4a3w4rhNjsZh4dwQI/boRiDpLMnW9jc36ZIO2sb9nFbMmznceOqff9eipyK9hyKvA5vyqQ==}
+  /@farm.js/islx@0.0.5(react-dom@19.3.1)(react@19.3.1)(vite@8.3.4):
+    resolution: {integrity: sha512-dAuBkKKL02AvcNpHEn3NsH9+08b2mX2cCkspS97WW1Yi2mJ6nsgbRY899Uv6oS3p2IbccFoQAdEoFGRgm7dbXQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
+      '@tanstack/react-router': '>=1.170'
+      '@tanstack/react-start': '>=1.169'
       react: '>=19'
       react-dom: '>=19'
       vite: '>=6'
     peerDependenciesMeta:
+      '@tanstack/react-router':
+        optional: true
+      '@tanstack/react-start':
+        optional: true
       react:
         optional: true
       react-dom:
