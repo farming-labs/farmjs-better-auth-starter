@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@farm.js/better-auth':
-    specifier: 0.1.50
-    version: 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+    specifier: 0.1.65
+    version: 0.1.65(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
   '@farm.js/core':
-    specifier: 0.1.50
-    version: 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+    specifier: 0.1.65
+    version: 0.1.65(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
   '@fontsource-variable/geist':
     specifier: 5.3.0
     version: 5.3.0
@@ -38,8 +38,8 @@ dependencies:
 
 devDependencies:
   '@farm.js/cli':
-    specifier: 0.1.50
-    version: 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+    specifier: 0.1.65
+    version: 0.1.65(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
   '@tailwindcss/vite':
     specifier: ^4.3.3
     version: 4.3.3(vite@8.3.4)
@@ -195,11 +195,11 @@ packages:
       tslib: 2.8.1
     optional: true
 
-  /@farm.js/better-auth@0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
-    resolution: {integrity: sha512-1SYCZ8v+r+bBjsnz0pKEc3QzmlqyPR63aWiOFrhlI9Fc3Cc9n/pHlU/lPlTDFBScxw3F1LLOXrXVu9PKYLbvzg==}
+  /@farm.js/better-auth@0.1.65(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
+    resolution: {integrity: sha512-OoQq8rK8nOH1C3wl5xVbDhPgbOlmX9JL5JifnI4KRzwpuZvhfX9otJWAyjBC0lOdnS0RRWUacl+jN+IeBXTSLQ==}
     dependencies:
-      '@farm.js/core': 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
-      '@farm.js/integration-utils': 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+      '@farm.js/core': 0.1.65(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+      '@farm.js/integration-utils': 0.1.65(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
     transitivePeerDependencies:
       - '@aws-sdk/client-dynamodb'
       - '@aws-sdk/lib-dynamodb'
@@ -264,12 +264,12 @@ packages:
       - yaml
     dev: false
 
-  /@farm.js/cli@0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
-    resolution: {integrity: sha512-Kyt7UAGx53uCJ0XTUoS3KyT2BdGVuKsONQoxWeEKh3FeyszbB5Jp9B7ymBuYrfwFirCNBPmngiIgy7T32O2rXg==}
+  /@farm.js/cli@0.1.65(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
+    resolution: {integrity: sha512-l5F0yCM7v04my23zLXlBEhJhNaBTgGbB7UULOA330T0Ihv8kDEVMJwiO0UxTBKTLWYXTtpISE8GNAQzYLGl3Hg==}
     engines: {node: '>=22.13.0'}
     hasBin: true
     dependencies:
-      '@farm.js/core': 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+      '@farm.js/core': 0.1.65(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
       '@farm.js/tunnel': 0.1.2
       commander: 11.1.0
       croner: 9.1.0
@@ -338,8 +338,8 @@ packages:
       - yaml
     dev: true
 
-  /@farm.js/core@0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
-    resolution: {integrity: sha512-hygenx17Sai+DFCX7UVDwr3y1HSIOGxyio46hz4KqFS1Q+XU3DuS/Ps7VEiGAiXpZ58jp7x1vk+wz+VNpqTT0g==}
+  /@farm.js/core@0.1.65(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
+    resolution: {integrity: sha512-XGQpcssImN9JemfnefeOdYmzxPO0eBJkSuL8qtgrGBEEg0VeQohxTpbEu8TW5Qv0LbT+y7RsdM8JpcjNxmkRAA==}
     engines: {node: '>=22.13.0'}
     peerDependencies:
       '@farming-labs/docs': ^0.2.118
@@ -362,9 +362,9 @@ packages:
       sharp:
         optional: true
     dependencies:
-      '@farm.js/islx': 0.0.5(react-dom@19.3.1)(react@19.3.1)(vite@8.3.4)
-      '@farming-labs/orm': 0.0.65
-      '@farming-labs/orm-runtime': 0.0.65(db0@0.3.4)(kysely@0.29.7)
+      '@farm.js/islx': 0.0.9(react-dom@19.3.1)(react@19.3.1)(vite@8.3.4)
+      '@farming-labs/orm': 0.0.66
+      '@farming-labs/orm-runtime': 0.0.66(db0@0.3.4)(kysely@0.29.7)
       '@formatjs/icu-messageformat-parser': 3.5.15
       '@jridgewell/trace-mapping': 0.3.31
       '@mdx-js/mdx': 3.1.1(supports-color@10.2.2)
@@ -374,7 +374,6 @@ packages:
       better-call: 1.3.7(zod@4.6.7)
       db0: 0.3.4
       es-module-lexer: 2.0.0
-      fast-glob: 3.3.3
       h3: 2.0.1-rc.32(crossws@0.4.15)(ocache@0.3.0)
       image-size: 2.0.4
       intl-messageformat: 11.2.12
@@ -389,6 +388,7 @@ packages:
       sharp: 0.35.5(@types/node@20.19.9)
       sugar-high: 0.9.5
       supports-color: 10.2.2
+      tinyglobby: 0.2.17
       unstorage: 2.0.0-alpha.10
       vite: 8.3.4(@types/node@20.19.9)
       zod: 4.6.7
@@ -449,10 +449,10 @@ packages:
       - uploadthing
       - yaml
 
-  /@farm.js/integration-utils@0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
-    resolution: {integrity: sha512-hYeI1U1jSH6LQdDwJ6VRcWz5zaSCeHkLSDuPZDsSTbcrtpT6aC4g4gawCetwF5CSyKTlkd9bBut122qSNKQnlA==}
+  /@farm.js/integration-utils@0.1.65(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5):
+    resolution: {integrity: sha512-CK8PomaEFcfPK5p0nwAZFA4oJpOPyk8XAfJQaBNbzGrJz31xU3ba7dTg/zp35gfzSkmfQskt1KxvJ385Djcnkg==}
     dependencies:
-      '@farm.js/core': 0.1.50(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
+      '@farm.js/core': 0.1.65(@tailwindcss/vite@4.3.3)(@types/node@20.19.9)(kysely@0.29.7)(react-dom@19.3.1)(react@19.3.1)(sharp@0.35.5)
     transitivePeerDependencies:
       - '@aws-sdk/client-dynamodb'
       - '@aws-sdk/lib-dynamodb'
@@ -517,8 +517,8 @@ packages:
       - yaml
     dev: false
 
-  /@farm.js/islx@0.0.5(react-dom@19.3.1)(react@19.3.1)(vite@8.3.4):
-    resolution: {integrity: sha512-dAuBkKKL02AvcNpHEn3NsH9+08b2mX2cCkspS97WW1Yi2mJ6nsgbRY899Uv6oS3p2IbccFoQAdEoFGRgm7dbXQ==}
+  /@farm.js/islx@0.0.9(react-dom@19.3.1)(react@19.3.1)(vite@8.3.4):
+    resolution: {integrity: sha512-/mBE6KOBpes3rA1oTnMh19r75R/HCDXSbfom54vtxt0/03Ls5zdyfxIiuRJdhUFrpP0o58pYIOdSSyRA71JFcw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
       '@tanstack/react-router': '>=1.170'
@@ -632,25 +632,25 @@ packages:
       '@farm.js/tunnel-win32-x64-msvc': 0.1.2
     dev: true
 
-  /@farming-labs/orm-d1@0.0.65:
-    resolution: {integrity: sha512-6nFfXt62qflKoUcNkvirQj16WoI9SPV39Qeob6iF88kBnWSkm6HPqCFKW5gGGcekmaijkoc/oYFm6MCx2QwbLw==}
+  /@farming-labs/orm-d1@0.0.66:
+    resolution: {integrity: sha512-bjjk9fK4BepblqoUM1ONCLf8xnlqD0/JCK13A0+M7F3e2O+/19/37qq3XtN5N0YfgeGZVi+4dSQ4RpnSJzSvRQ==}
     dependencies:
-      '@farming-labs/orm': 0.0.65
-      '@farming-labs/orm-sql': 0.0.65
+      '@farming-labs/orm': 0.0.66
+      '@farming-labs/orm-sql': 0.0.66
 
-  /@farming-labs/orm-drizzle@0.0.65:
-    resolution: {integrity: sha512-/dXo/aHawf9BVmLctFd/FB9cl8MVsh/nfiY+/HRUyG2YJKnVHxJsxV7SKPOl7dzyRf8qThKlqVapSesftMZ/gQ==}
+  /@farming-labs/orm-drizzle@0.0.66:
+    resolution: {integrity: sha512-ep15sBLS0oDZfDO/ssaQnO3lwV1dceOSq51TC7dW0ydQRk6sQYAYstTADSv9HMNykw2DaHIv19pDvK+2aIkvAg==}
     peerDependencies:
       drizzle-orm: ^0.45.2
     peerDependenciesMeta:
       drizzle-orm:
         optional: true
     dependencies:
-      '@farming-labs/orm': 0.0.65
-      '@farming-labs/orm-sql': 0.0.65
+      '@farming-labs/orm': 0.0.66
+      '@farming-labs/orm-sql': 0.0.66
 
-  /@farming-labs/orm-dynamodb@0.0.65:
-    resolution: {integrity: sha512-N0NBz9WMHqtvn/dVI0ZLvVLM9sdNsuAehVSnHkfmimP9aFPF9nInhELuUWaksD+Wo3uwZzErFfvGnXOu8ew6mA==}
+  /@farming-labs/orm-dynamodb@0.0.66:
+    resolution: {integrity: sha512-SrT6TGtkC8B5X7DV35typ3QxUAsTRxsU4Vuj7V/jkzNgPWM74Wr2d63KwAgotk9oc6fqOQtvsuWS4oqeQIDf9A==}
     peerDependencies:
       '@aws-sdk/client-dynamodb': ^3.1049.0
       '@aws-sdk/lib-dynamodb': ^3.1049.0
@@ -660,119 +660,119 @@ packages:
       '@aws-sdk/lib-dynamodb':
         optional: true
     dependencies:
-      '@farming-labs/orm': 0.0.65
+      '@farming-labs/orm': 0.0.66
 
-  /@farming-labs/orm-edgedb@0.0.65:
-    resolution: {integrity: sha512-VfcFmPbKBFe9U4CL2MqKbL0jxRifBB+fVM5mxU2AJ6G9l/1i6AzRDtsfXhRy9Sl8swsRA4C+WXTGXXPnTCoB6w==}
+  /@farming-labs/orm-edgedb@0.0.66:
+    resolution: {integrity: sha512-nIRqdA/wrDFlRiC9+7ybMLMgSAi5lIrHj4WcxFfSBtzon0gpOI5Bk3PbwvQ3pmREfMzUyTQdsl36w1QYJBUwZw==}
     dependencies:
-      '@farming-labs/orm': 0.0.65
-      '@farming-labs/orm-sql': 0.0.65
+      '@farming-labs/orm': 0.0.66
+      '@farming-labs/orm-sql': 0.0.66
 
-  /@farming-labs/orm-firestore@0.0.65:
-    resolution: {integrity: sha512-iJB9vW/GGbWb0gXJef8pTmYcbeXXabLyRou82trWjOmrbUblRqMXX1YaErLe7FvJj+JUVhJ6YGM0QHGpFPz6NA==}
+  /@farming-labs/orm-firestore@0.0.66:
+    resolution: {integrity: sha512-TsldBM0IRMmpzJr5QMACBQTaG7iDChcn+xmFqGpcjN1lqJCTpWLW8f9KnprSxmth9Wvf8KBqQY+n6nR5Hpincg==}
     dependencies:
-      '@farming-labs/orm': 0.0.65
+      '@farming-labs/orm': 0.0.66
 
-  /@farming-labs/orm-kv@0.0.65:
-    resolution: {integrity: sha512-C9uzRKhqC/xwROoZJmgZFYEtW/+hyzg0pz/VrvHLMYiAs9CpAZS7/qFlgi4o3VDMPHwwG+bIQuv+ylonhASIYw==}
+  /@farming-labs/orm-kv@0.0.66:
+    resolution: {integrity: sha512-SnBZu3RQ3Sb40IK64ngUNSueTtYIzVgGUWgKciukt1yMM26Wn8pG+nfDe9Ohna76lIs+w6vJry5uaoR7/PrHqA==}
     dependencies:
-      '@farming-labs/orm': 0.0.65
+      '@farming-labs/orm': 0.0.66
 
-  /@farming-labs/orm-kysely@0.0.65(kysely@0.29.7):
-    resolution: {integrity: sha512-W+mcEYxuoHggPSXyjBNSzgNr+az9xZoWgP2Y7XFBnzBsGSwE3FpEL79xXzdAO9oyzAwwKYetg64ThEL5YtbLKA==}
+  /@farming-labs/orm-kysely@0.0.66(kysely@0.29.7):
+    resolution: {integrity: sha512-BUQvZ+tOMTTSkRZKW4tR1IsunnWbu9ZPxcxd4WyIWGE1FRkI9MQ1rbp4zvsBPtsT4ZdxIIZSW3+G1e7W1rXV6A==}
     peerDependencies:
       kysely: ^0.28.17
     peerDependenciesMeta:
       kysely:
         optional: true
     dependencies:
-      '@farming-labs/orm': 0.0.65
-      '@farming-labs/orm-sql': 0.0.65
+      '@farming-labs/orm': 0.0.66
+      '@farming-labs/orm-sql': 0.0.66
       kysely: 0.29.7
 
-  /@farming-labs/orm-mikroorm@0.0.65:
-    resolution: {integrity: sha512-2cylBPkAcwKOYEtl9tUw8SVui1ExkLNzJkiHBT/zrRWEF9mBu04X+YhZ94ZHkxJ2LQur67OIlHhp8fXbeLp7YA==}
+  /@farming-labs/orm-mikroorm@0.0.66:
+    resolution: {integrity: sha512-vMCu5Wtwwl+Go6fzekbcDsNkeYQzkkEjvtULaMC8mvkM9LW89HHCZz41Ttj8bdvH2Vj6j6UKy9r4Ey49ZaUzqw==}
     peerDependencies:
       '@mikro-orm/core': ^7.0.17
     peerDependenciesMeta:
       '@mikro-orm/core':
         optional: true
     dependencies:
-      '@farming-labs/orm': 0.0.65
-      '@farming-labs/orm-sql': 0.0.65
+      '@farming-labs/orm': 0.0.66
+      '@farming-labs/orm-sql': 0.0.66
 
-  /@farming-labs/orm-mongo@0.0.65:
-    resolution: {integrity: sha512-/6EBcsg0HHcRQF6hr+lssq2G52D0Fwyp4ZwLSibetBf+3d7jFbtNx2ahsGltYUuL64s/UZo+VBUjIZIuyFDT4A==}
+  /@farming-labs/orm-mongo@0.0.66:
+    resolution: {integrity: sha512-iaUosoV7ZR4b8EN/WUxoQkelYECBTDxh7iXfopDTr6cVJDf0CKY0HytFFHmqOpqBDrt5yMbIBqKwZz3VwZHQ+A==}
     peerDependencies:
       mongodb: ^6.0.0
     peerDependenciesMeta:
       mongodb:
         optional: true
     dependencies:
-      '@farming-labs/orm': 0.0.65
-      '@farming-labs/orm-mongoose': 0.0.65
+      '@farming-labs/orm': 0.0.66
+      '@farming-labs/orm-mongoose': 0.0.66
     transitivePeerDependencies:
       - mongoose
 
-  /@farming-labs/orm-mongoose@0.0.65:
-    resolution: {integrity: sha512-FlX+8oHlKz1lX6nhzim/P733dn6/F4AHomFx95gB2Xw3Yfw4frqxcFrmDE4yplUCHo/4QFS5MYbPPNXAnwz+Og==}
+  /@farming-labs/orm-mongoose@0.0.66:
+    resolution: {integrity: sha512-AK2NQVdShPYHR3KFEOWTkBZdTLg9DKZuPvKKWL/VpZKBD+w9vyl9cN3j5IDkNeeeDUhgl1MPD9Lj0/46fg7I3g==}
     peerDependencies:
       mongoose: ^8.0.0
     peerDependenciesMeta:
       mongoose:
         optional: true
     dependencies:
-      '@farming-labs/orm': 0.0.65
+      '@farming-labs/orm': 0.0.66
 
-  /@farming-labs/orm-neo4j@0.0.65:
-    resolution: {integrity: sha512-bfxvXOO/bB+bYOhVq6w3rc0Mb8ofNyL67LfQENH31CFq7n0VR/6ufqCIAUzcrT7N3Ml1cAhbeI+tA5o8ZIfRNQ==}
+  /@farming-labs/orm-neo4j@0.0.66:
+    resolution: {integrity: sha512-XKi2RJBacP3gk9lYkrBgDf/BgPsYhGmqqAuayqWP6Q0O2pjtf7hlRH9a26Dzda9LiSEc9kgSv7fnYcc1UrfS7w==}
     dependencies:
-      '@farming-labs/orm': 0.0.65
+      '@farming-labs/orm': 0.0.66
 
-  /@farming-labs/orm-prisma@0.0.65:
-    resolution: {integrity: sha512-QaQT0nSi8Yo1qkPyh0IJ0Pa8p2VXf/SCDP7GI6F4lmtG8QdCKLV8xMCOYpzyMEQ4BWRefebalaWO8wMK6kpSVA==}
+  /@farming-labs/orm-prisma@0.0.66:
+    resolution: {integrity: sha512-B6MGW3RfTmjjZvCZSVblvhBOoFVfLyS7KvGXky1Oizxmrs2fDh1TAX5OpDEOsX6uNAaJlP+GGaZ10Rnrupa2nw==}
     peerDependencies:
       '@prisma/client': ^6.0.0
     peerDependenciesMeta:
       '@prisma/client':
         optional: true
     dependencies:
-      '@farming-labs/orm': 0.0.65
+      '@farming-labs/orm': 0.0.66
 
-  /@farming-labs/orm-redis@0.0.65:
-    resolution: {integrity: sha512-g/CaRuzZfvupKn1/LKRAOt6VPsnXroZVktiXppAgrfKIr/JtUj0xi2TfaMrA9bgbF+SWk9a+mBAn/n5ETalqLQ==}
+  /@farming-labs/orm-redis@0.0.66:
+    resolution: {integrity: sha512-k9rwcBr8Rb6wY2+g0uemYakA2rTcVyFLfl0jon4KOFbvtgVnkOxkILmGb1HAiRVs4ca9eAH1gsitfQU1M99sqg==}
     dependencies:
-      '@farming-labs/orm': 0.0.65
+      '@farming-labs/orm': 0.0.66
 
-  /@farming-labs/orm-runtime@0.0.65(db0@0.3.4)(kysely@0.29.7):
-    resolution: {integrity: sha512-guidSljDw1wBgn36glxz/Lv/G2HR2iNKI33I89WuJGiiNzTqSDBk6peV4t+j5eNaqCxRKnLoc/bYlPPEUh1uuQ==}
+  /@farming-labs/orm-runtime@0.0.66(db0@0.3.4)(kysely@0.29.7):
+    resolution: {integrity: sha512-+kpkorUI5o/s64c6ostGPOkT9t+gNVSUWE1Kladv/ByjDeodttnxcOhMQGjIEW2Kbn/gejp+UfsTZ6nynRBUvA==}
     peerDependencies:
       '@aws-sdk/client-dynamodb': ^3.1049.0
     peerDependenciesMeta:
       '@aws-sdk/client-dynamodb':
         optional: true
     dependencies:
-      '@farming-labs/orm': 0.0.65
-      '@farming-labs/orm-d1': 0.0.65
-      '@farming-labs/orm-drizzle': 0.0.65
-      '@farming-labs/orm-dynamodb': 0.0.65
-      '@farming-labs/orm-edgedb': 0.0.65
-      '@farming-labs/orm-firestore': 0.0.65
-      '@farming-labs/orm-kv': 0.0.65
-      '@farming-labs/orm-kysely': 0.0.65(kysely@0.29.7)
-      '@farming-labs/orm-mikroorm': 0.0.65
-      '@farming-labs/orm-mongo': 0.0.65
-      '@farming-labs/orm-mongoose': 0.0.65
-      '@farming-labs/orm-neo4j': 0.0.65
-      '@farming-labs/orm-prisma': 0.0.65
-      '@farming-labs/orm-redis': 0.0.65
-      '@farming-labs/orm-sequelize': 0.0.65
-      '@farming-labs/orm-sql': 0.0.65
-      '@farming-labs/orm-supabase': 0.0.65
-      '@farming-labs/orm-surrealdb': 0.0.65
-      '@farming-labs/orm-typeorm': 0.0.65
-      '@farming-labs/orm-unstorage': 0.0.65(db0@0.3.4)
-      '@farming-labs/orm-xata': 0.0.65
+      '@farming-labs/orm': 0.0.66
+      '@farming-labs/orm-d1': 0.0.66
+      '@farming-labs/orm-drizzle': 0.0.66
+      '@farming-labs/orm-dynamodb': 0.0.66
+      '@farming-labs/orm-edgedb': 0.0.66
+      '@farming-labs/orm-firestore': 0.0.66
+      '@farming-labs/orm-kv': 0.0.66
+      '@farming-labs/orm-kysely': 0.0.66(kysely@0.29.7)
+      '@farming-labs/orm-mikroorm': 0.0.66
+      '@farming-labs/orm-mongo': 0.0.66
+      '@farming-labs/orm-mongoose': 0.0.66
+      '@farming-labs/orm-neo4j': 0.0.66
+      '@farming-labs/orm-prisma': 0.0.66
+      '@farming-labs/orm-redis': 0.0.66
+      '@farming-labs/orm-sequelize': 0.0.66
+      '@farming-labs/orm-sql': 0.0.66
+      '@farming-labs/orm-supabase': 0.0.66
+      '@farming-labs/orm-surrealdb': 0.0.66
+      '@farming-labs/orm-typeorm': 0.0.66
+      '@farming-labs/orm-unstorage': 0.0.66(db0@0.3.4)
+      '@farming-labs/orm-xata': 0.0.66
     transitivePeerDependencies:
       - '@aws-sdk/lib-dynamodb'
       - '@azure/app-configuration'
@@ -805,52 +805,52 @@ packages:
       - typeorm
       - uploadthing
 
-  /@farming-labs/orm-sequelize@0.0.65:
-    resolution: {integrity: sha512-mHLu2pRO3AJmuHWGux6VTKERsCPx9kRsOF/0QLU1IG2DzSU8+Sjx8x7PBBEBABLKxn+KMGEIvkFCmy5exeB5Vw==}
+  /@farming-labs/orm-sequelize@0.0.66:
+    resolution: {integrity: sha512-blZYD5E4dsCmUqxj+mA468AGzcqeZIEqZtXKdaCgZ2u7hM0OadFOe8A+cVeaCKBXryCay/0te6wpN2id5HMeGg==}
     peerDependencies:
       sequelize: ^6.37.8
     peerDependenciesMeta:
       sequelize:
         optional: true
     dependencies:
-      '@farming-labs/orm': 0.0.65
-      '@farming-labs/orm-sql': 0.0.65
+      '@farming-labs/orm': 0.0.66
+      '@farming-labs/orm-sql': 0.0.66
 
-  /@farming-labs/orm-sql@0.0.65:
-    resolution: {integrity: sha512-sBxzDyqiKM38Qy3js08CiydNz6YUKbKdTQnlwswGAqNiLDJU1Zd0qi+NnB3Lrbbi+2abOtyr8qe527Ri8n3Ejw==}
+  /@farming-labs/orm-sql@0.0.66:
+    resolution: {integrity: sha512-UW56Ge1oAKpg7MEkZcdpvmI0FKtQbjYSRSKvC4KkKVtgLkzp5bVZ8LPiZ6GkULVBFFLCAiRfdWkKvFR9Ca/ivA==}
     dependencies:
-      '@farming-labs/orm': 0.0.65
+      '@farming-labs/orm': 0.0.66
 
-  /@farming-labs/orm-supabase@0.0.65:
-    resolution: {integrity: sha512-PIv3XmjOdSq2XEE/okZmL+EP2vbh54/y1Xv9Gx1Jayzs2g9GambcoA8SioMy+wi5g7ZXJBvFLEqJffO34tw2Xg==}
+  /@farming-labs/orm-supabase@0.0.66:
+    resolution: {integrity: sha512-D0WkCOe2XGLsUKenzSobvDY1keX9woqC0IDs+VPzyP2yglV97+MEEIGmXbzcGYn1AkLdpasM3RrH/bElgc0Q5A==}
     dependencies:
-      '@farming-labs/orm': 0.0.65
+      '@farming-labs/orm': 0.0.66
 
-  /@farming-labs/orm-surrealdb@0.0.65:
-    resolution: {integrity: sha512-t7hycrzyovL3uY/e7371kW/PQTaviRzKePpvPR9tO3fVkfmJ4+AGxyeOXHoKsnyGk22rqh3JnMv4dKS9g6LFUw==}
+  /@farming-labs/orm-surrealdb@0.0.66:
+    resolution: {integrity: sha512-yxigasoK+zX/wRC7brIVRM1RSM/Jhh+p+Sw43TfLuLfpS+1vUTd2WiT3X2m1B6DpAKrGSjhwFoCqqR7ceLiVjQ==}
     peerDependencies:
       surrealdb: ^2.0.3
     peerDependenciesMeta:
       surrealdb:
         optional: true
     dependencies:
-      '@farming-labs/orm': 0.0.65
+      '@farming-labs/orm': 0.0.66
 
-  /@farming-labs/orm-typeorm@0.0.65:
-    resolution: {integrity: sha512-TF3EEdeOHMU3DAJeceM0aUeqTFyoDh2DVu3sb5sVANCIpQwnSrfcfizqIzToOXRZpPJNr+RH/Xkw+xGs0/vfXA==}
+  /@farming-labs/orm-typeorm@0.0.66:
+    resolution: {integrity: sha512-9wcBcowume2aZjEDlkJbTbYzHz54whj7ZNnSR/X8NN1FOUS1F2gTxm5fX5tfAwGGlRwbZLxNWSINfHDbpQxxVw==}
     peerDependencies:
       typeorm: ^0.3.28
     peerDependenciesMeta:
       typeorm:
         optional: true
     dependencies:
-      '@farming-labs/orm': 0.0.65
-      '@farming-labs/orm-sql': 0.0.65
+      '@farming-labs/orm': 0.0.66
+      '@farming-labs/orm-sql': 0.0.66
 
-  /@farming-labs/orm-unstorage@0.0.65(db0@0.3.4):
-    resolution: {integrity: sha512-ITwntwCe2VLcr0RWwYAOGX6tkNGbmcNwEFIAZaLtiiPbO9yQnB/ootCSOXhzH6lklD8BWzDy7gN2/90/12P+5w==}
+  /@farming-labs/orm-unstorage@0.0.66(db0@0.3.4):
+    resolution: {integrity: sha512-TH1rboNKY621qnhPTOA0Hqm92vAQyiYbB+QhfM8e4emmGaH5AYsY3CFw+cpOt/hzIwC2+X1xjVRsX6waOj+Qeg==}
     dependencies:
-      '@farming-labs/orm': 0.0.65
+      '@farming-labs/orm': 0.0.66
       unstorage: 1.17.6(db0@0.3.4)
     transitivePeerDependencies:
       - '@azure/app-configuration'
@@ -873,19 +873,19 @@ packages:
       - ioredis
       - uploadthing
 
-  /@farming-labs/orm-xata@0.0.65:
-    resolution: {integrity: sha512-mX4BXe0Ao1EkldkVD+pL7N8JRfmQPgplNOSVCniwIOMuEYFe9RqjgglVLVF6yDfbcKG9MnDtuqeDIgsd69aA/A==}
+  /@farming-labs/orm-xata@0.0.66:
+    resolution: {integrity: sha512-abBIoJxtutAOhbNViDpyTCAaNFcpWn5u0LN15+ElZd1KXef3jAq+aQ/E4Jf2pO5F2LZPv45I5nlN6omuzmaX3w==}
     peerDependencies:
       '@xata.io/client': ^0.30.1
     peerDependenciesMeta:
       '@xata.io/client':
         optional: true
     dependencies:
-      '@farming-labs/orm': 0.0.65
-      '@farming-labs/orm-sql': 0.0.65
+      '@farming-labs/orm': 0.0.66
+      '@farming-labs/orm-sql': 0.0.66
 
-  /@farming-labs/orm@0.0.65:
-    resolution: {integrity: sha512-5lJfMrqh9nI31qV6UPNPZymMlPUHF/VIvX/qbGG5fdP1NuQFrvXe9ZU8Pu/hYMdqdia7m/LriUdQO0uqr/IhiA==}
+  /@farming-labs/orm@0.0.66:
+    resolution: {integrity: sha512-YC68T6BDN/uDdMmInRD2mi8U70XqG28Uj9O5lLWHETQSsSqNrdY2NngZd2kycdzxDk+UuGfoIno3EgWKCFT6mA==}
 
   /@fontsource-variable/geist-mono@5.3.0:
     resolution: {integrity: sha512-vBbuwDEo9AkrqADMXOrlAR3DFcJi4/JxeuU43FoiQERnNwsfXNnvxvReZG02cQKmyk4DZkZdBZX3oTDvy2zBAw==}
@@ -1194,24 +1194,6 @@ packages:
   /@noble/hashes@2.4.0:
     resolution: {integrity: sha512-X5XaVWZIBCT7HHZGm5I7ZQXDwLG+bGXuSrMQAW+7Zvl87h1kmc1ZB1VSRJcpUfoUrGQp4Fkoxm5kZ+Ms+aW+eA==}
     engines: {node: '>= 20.19.0'}
-
-  /@nodelib/fs.scandir@2.1.5:
-    resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
-    engines: {node: '>= 8'}
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      run-parallel: 1.2.0
-
-  /@nodelib/fs.stat@2.0.5:
-    resolution: {integrity: sha512-RkhPPp2zrqDAQA/2jNhnztcPAlv64XdhIp7a7454A5ovI7Bukxgt7MX7udwAu3zg1DcpPU0rz3VV1SeaqvY4+A==}
-    engines: {node: '>= 8'}
-
-  /@nodelib/fs.walk@1.2.8:
-    resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
-    engines: {node: '>= 8'}
-    dependencies:
-      '@nodelib/fs.scandir': 2.1.5
-      fastq: 1.20.3
 
   /@opentelemetry/api@1.9.1:
     resolution: {integrity: sha512-gLyJlPHPZYdAk1JENA9LeHejZe1Ti77/pTeFm/nMXmQH/HFZlcS/O2XJB+L8fkbrNSqhdtlvjBVjxwUYanNH5Q==}
@@ -1709,12 +1691,6 @@ packages:
       zod: 4.6.7
     dev: false
 
-  /braces@3.0.3:
-    resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
-    engines: {node: '>=8'}
-    dependencies:
-      fill-range: 7.1.1
-
   /ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
 
@@ -1925,21 +1901,6 @@ packages:
   /extend@3.0.2:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
 
-  /fast-glob@3.3.3:
-    resolution: {integrity: sha512-7MptL8U0cqcFdzIzwOTHoilX9x5BrNqye7Z/LuC7kCMRio1EMSyqRK3BEAUD7sXRq4iT4AzTVuZdhgQ2TCvYLg==}
-    engines: {node: '>=8.6.0'}
-    dependencies:
-      '@nodelib/fs.stat': 2.0.5
-      '@nodelib/fs.walk': 1.2.8
-      glob-parent: 5.1.2
-      merge2: 1.4.1
-      micromatch: 4.0.8
-
-  /fastq@1.20.3:
-    resolution: {integrity: sha512-XKv5nnLs6nLF71NgiKJLIZFLkPyIEuOselLG7ujZnGrRfQK8HpvY+WqKhAJUAdLomwVHErVS4LfxFlPq0/FTAw==}
-    dependencies:
-      reusify: 1.1.0
-
   /fdir@6.5.0(picomatch@4.0.7):
     resolution: {integrity: sha512-tIbYtZbucOs0BRGqPJkshJUYdL+SDH7dVM8gjy+ERp3WAUjLEFJE+02kanyHtwjWOnwrKYBiwAmM0p4kLJAnXg==}
     engines: {node: '>=12.0.0'}
@@ -1951,24 +1912,12 @@ packages:
     dependencies:
       picomatch: 4.0.7
 
-  /fill-range@7.1.1:
-    resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
-    engines: {node: '>=8'}
-    dependencies:
-      to-regex-range: 5.0.1
-
   /fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
     optional: true
-
-  /glob-parent@5.1.2:
-    resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
-    engines: {node: '>= 6'}
-    dependencies:
-      is-glob: 4.0.3
 
   /graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
@@ -2087,22 +2036,8 @@ packages:
   /is-decimal@2.0.1:
     resolution: {integrity: sha512-AAB9hiomQs5DXWcRB1rqsxGUstbRroFOPPVAomNk/3XHR5JyEZChOyTWe2oayKnsSsr/kcGqF+z6yuH6HHpN0A==}
 
-  /is-extglob@2.1.1:
-    resolution: {integrity: sha512-SbKbANkN603Vi4jEZv49LeVJMn4yGwsbzZworEoyEiutsN3nJYdbO36zfhGJ6QEDpOZIFkDtnq5JRxmvl3jsoQ==}
-    engines: {node: '>=0.10.0'}
-
-  /is-glob@4.0.3:
-    resolution: {integrity: sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==}
-    engines: {node: '>=0.10.0'}
-    dependencies:
-      is-extglob: 2.1.1
-
   /is-hexadecimal@2.0.1:
     resolution: {integrity: sha512-DgZQp241c8oO6cA1SbTEWiXeoxV42vlcJxgH+B3hi1AiqqKruZR3ZGF8In3fj4+/y/7rHvlOZLZtgJ/4ttYGZg==}
-
-  /is-number@7.0.0:
-    resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
-    engines: {node: '>=0.12.0'}
 
   /is-plain-obj@4.1.0:
     resolution: {integrity: sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg==}
@@ -2542,10 +2477,6 @@ packages:
     dependencies:
       '@types/mdast': 4.0.4
 
-  /merge2@1.4.1:
-    resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
-    engines: {node: '>= 8'}
-
   /micromark-core-commonmark@2.0.4:
     resolution: {integrity: sha512-wxEeE8v8XVvOrxn1TZj74qYhAtTQsSqufHVS3uNVyT1MupXxhyaHk8/9xDNPh9BmL77QNDgWTkZ3RsYHB2ry7w==}
     dependencies:
@@ -2852,13 +2783,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /micromatch@4.0.8:
-    resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
-    engines: {node: '>=8.6'}
-    dependencies:
-      braces: 3.0.3
-      picomatch: 2.3.2
-
   /ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
@@ -3029,9 +2953,6 @@ packages:
   /property-information@7.2.0:
     resolution: {integrity: sha512-IAtzIB6sUiWaJYrX9smp3V46pBGbBeLFRGdh25kg1334VcBlD8HzhPeNIWQH9zhGmo2itIe25EHt9dQP7G5hmg==}
 
-  /queue-microtask@1.2.3:
-    resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
-
   /radix3@1.1.2:
     resolution: {integrity: sha512-b484I/7b8rDEdSDKckSSBA8knMpcdsXudlE/LNL639wFoHKwLbEkQFZHWEYwDC0wa0FKUcCY+GAF73Z7wxNVFA==}
 
@@ -3141,10 +3062,6 @@ packages:
       mdast-util-to-markdown: 2.2.0
       unified: 11.0.5
 
-  /reusify@1.1.0:
-    resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
-    engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
-
   /rolldown@1.2.14:
     resolution: {integrity: sha512-eTBTTqMR6uHKLgcUqpJP8ntzDI6V4LYA8negAMBEI7gkgVvOdrx6VsvS2Ym+83KhOPdLCHWJu0w7UQFJZhHKNw==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -3174,11 +3091,6 @@ packages:
 
   /rou3@0.9.2:
     resolution: {integrity: sha512-3SOzvaAg8rkHrXtRjpCvCvbyO5to9oOO27Z/XqHEYXfMRVSw/qMIVdmaOk9W2lcRLtR6dlqTjo9hDeJk70QBYQ==}
-
-  /run-parallel@1.2.0:
-    resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
-    dependencies:
-      queue-microtask: 1.2.3
 
   /scheduler@0.28.0:
     resolution: {integrity: sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==}
@@ -3287,12 +3199,6 @@ packages:
     dependencies:
       fdir: 6.5.0(picomatch@4.0.7)
       picomatch: 4.0.7
-
-  /to-regex-range@5.0.1:
-    resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
-    engines: {node: '>=8.0'}
-    dependencies:
-      is-number: 7.0.0
 
   /trim-lines@3.0.1:
     resolution: {integrity: sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==}
